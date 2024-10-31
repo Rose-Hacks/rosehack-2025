@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
-import { COLORS } from "@/data/tags";
 
 import { cn } from "@/utils/tailwind";
 
@@ -40,27 +39,19 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
-  coloring?: keyof typeof COLORS;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
-    { className, variant, size, asChild = false, coloring = "none", ...props },
+    { className, variant, size, asChild = false, ...props },
     ref,
   ) => {
     const Comp = asChild ? Slot : "button";
 
-    const { background, text, hover } = COLORS[coloring];
 
-    console.log(COLORS[coloring]);
     return (
       <Comp
-        className={cn(
-          buttonVariants({ variant, size, className }),
-          background,
-          text,
-          hover,
-        )}
+      className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
       />
