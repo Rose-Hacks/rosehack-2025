@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
+import { COLORS } from "@/data/tags";
 
 import { cn } from "@/utils/tailwind";
 
@@ -10,7 +11,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-slate-900 text-slate-50 hover:bg-slate-900/90 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90",
+          "text-slate-50 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90",
         destructive:
           "bg-red-500 text-slate-50 hover:bg-red-500/90 dark:bg-red-900 dark:text-slate-50 dark:hover:bg-red-900/90",
         outline:
@@ -39,14 +40,27 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
+  coloring?: keyof typeof COLORS;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  (
+    { className, variant, size, asChild = false, coloring = "none", ...props },
+    ref,
+  ) => {
     const Comp = asChild ? Slot : "button";
+
+    const { background, text, hover } = COLORS[coloring];
+
+    console.log(COLORS[coloring]);
     return (
       <Comp
-        className={cn(buttonVariants({ variant, size, className }))}
+        className={cn(
+          buttonVariants({ variant, size, className }),
+          background,
+          text,
+          hover,
+        )}
         ref={ref}
         {...props}
       />

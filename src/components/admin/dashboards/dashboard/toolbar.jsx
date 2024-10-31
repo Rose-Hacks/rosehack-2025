@@ -162,6 +162,7 @@ const Toolbar = ({
             key={index}
             onClick={() => onClick(tag.value)}
             className="text-nowrap"
+            coloring={tag.value}
           >
             {tag.text}
           </Button>

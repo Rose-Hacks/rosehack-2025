@@ -67,6 +67,7 @@ const Dashboard = ({
           setFilters={setFilters}
         />
       </div>
+
       <Toolbar
         meta={meta}
         setMeta={setMeta}
@@ -82,6 +83,7 @@ const Dashboard = ({
         setLoading={setLoading}
         searchableItems={searchableItems}
       />
+
       <Table
         page={page}
         searchParams={searchParams}
