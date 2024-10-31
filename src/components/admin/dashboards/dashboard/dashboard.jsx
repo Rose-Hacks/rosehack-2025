@@ -61,6 +61,7 @@ const Dashboard = ({
     <div className="w-full">
       <div className="my-2 flex items-center">
         <Label className="pr-5 text-2xl font-bold">{title}</Label>
+
         <Filters
           statuses={statuses}
           filters={filters}

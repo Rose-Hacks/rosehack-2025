@@ -1,4 +1,6 @@
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { COLORS } from "@/data/tags";
+import { cn } from "@/utils/tailwind";
 
 const Filters = ({ statuses, filters, setFilters }) => {
   const selectedFilters =
@@ -37,7 +39,11 @@ const Filters = ({ statuses, filters, setFilters }) => {
             onClick={() =>
               onClick(parseInt(key), selectedFilters.includes(parseInt(key)))
             }
-            className="bg-gray-300"
+            className={cn(
+              COLORS[key]?.background,
+              COLORS[key]?.text,
+              COLORS[key]?.hover,
+            )}
           >
             {value}
           </ToggleGroupItem>
