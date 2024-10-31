@@ -13,7 +13,7 @@ const Events = ({ events, totalDays }) => {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="mx-auto grid w-10/12 grid-cols-6 items-center justify-between rounded border-2 border-black text-base">
+      <div className="mx-auto grid w-10/12 grid-cols-7 items-center justify-between rounded border-2 border-black text-base">
         {totalDays.map((day) => (
           <button
             key={day}
@@ -27,6 +27,7 @@ const Events = ({ events, totalDays }) => {
         ))}
       </div>
       <div className="mt-6 h-full w-10/12">
+        {console.log(events)}
         {events
           .filter(({ day }) => day === selectedDay)
           .map(({ start, summary, description, location }, index) => (
