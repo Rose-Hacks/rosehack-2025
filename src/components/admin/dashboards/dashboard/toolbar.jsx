@@ -17,6 +17,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import { COLORS } from "@/data/tags";
+import { cn } from "@/utils/tailwind";
 
 const Toolbar = ({
   page,
@@ -161,7 +163,12 @@ const Toolbar = ({
           <Button
             key={index}
             onClick={() => onClick(tag.value)}
-            className="text-nowrap"
+            className={cn(
+              COLORS[tag.value]?.background,
+              COLORS[tag.value]?.text,
+              COLORS[tag.value]?.hover,
+              "text-nowrap",
+            )}
           >
             {tag.text}
           </Button>

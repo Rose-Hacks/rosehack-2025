@@ -61,12 +61,14 @@ const Dashboard = ({
     <div className="w-full">
       <div className="my-2 flex items-center">
         <Label className="pr-5 text-2xl font-bold">{title}</Label>
+
         <Filters
           statuses={statuses}
           filters={filters}
           setFilters={setFilters}
         />
       </div>
+
       <Toolbar
         meta={meta}
         setMeta={setMeta}
@@ -82,6 +84,7 @@ const Dashboard = ({
         setLoading={setLoading}
         searchableItems={searchableItems}
       />
+
       <Table
         page={page}
         searchParams={searchParams}

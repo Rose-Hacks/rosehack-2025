@@ -16,7 +16,15 @@ const Schedule = async () => {
     });
   });
 
-  const totalDays = items ? [...new Set(items.map(({ day }) => day))] : [];
+  const totalDays = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
 
   return <Events events={items} totalDays={totalDays} />;
 };
