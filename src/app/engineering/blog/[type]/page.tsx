@@ -21,7 +21,7 @@ const getBlogPosts = () => {
   return Object.fromEntries(contents);
 };
 
-const convertMarkdownToHtml = async (content) =>
+const convertMarkdownToHtml = async (content: string) =>
   (
     await unified()
       .use(remarkParse)
@@ -31,7 +31,11 @@ const convertMarkdownToHtml = async (content) =>
       .process(content)
   ).toString();
 
-const Page = async ({ params }) => {
+type PageProps = {
+  params: { type: string };
+};
+
+const Page = async ({ params }: PageProps) => {
   const article = await getBlogPosts();
 
   if (article.hasOwnProperty(params.type)) {
