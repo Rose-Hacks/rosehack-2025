@@ -50,7 +50,7 @@ const Find = () => {
 
   const [search, setSearch] = useState(ideas);
 
-  console.log(search);
+  console.log(search, getVirtualItems(), measureElement);
 
   return (
     <div className="flex h-[calc(100vh-48px)] w-full flex-col">
