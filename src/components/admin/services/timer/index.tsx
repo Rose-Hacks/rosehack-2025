@@ -39,9 +39,9 @@ const Timer = () => {
           clear all
         </Button>
       </div>
-      <div className="flex h-full flex-col overflow-y-scroll rounded-3xl bg-gray-200 p-4">
+      <div className="flex h-full flex-col overflow-y-scroll p-4">
         {timers.length === 0 ? (
-          <div className="flex h-full items-center justify-center text-2xl font-bold opacity-30">
+          <div className="flex h-full items-center justify-center text-2xl font-bold">
             No Timers
           </div>
         ) : (
