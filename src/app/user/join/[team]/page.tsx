@@ -2,7 +2,7 @@ import ProtectedPage from "@/components/protected";
 import Join from "@/components/user/join";
 
 type props = {
-  params: { teamID: string };
+  params: { team: string };
 };
 
 const Page = ({ params }: props) => {
