@@ -1,4 +1,4 @@
-import Evan from "@/public/board/evan.png";
+import Evan from "@/public/board/evan.webp";
 
 export const TEAMS = [
   {
