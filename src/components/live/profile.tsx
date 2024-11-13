@@ -10,7 +10,7 @@ const Profile = ({
   image: StaticImageData | string;
 }) => {
   return (
-    <div className="flex w-full flex-col gap-1 text-center">
+    <div className="flex w-full flex-col gap-1 text-center text-white">
       <Image
         src={image}
         alt="Evan and his roommates"
