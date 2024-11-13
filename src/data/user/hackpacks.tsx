@@ -17,21 +17,21 @@ import {
 } from "@icons-pack/react-simple-icons";
 
 export const TECHSTACKS: Record<string, React.ReactNode> = {
-  Javascript: <Javascript />,
-  "Next.js": <Nextjs />,
-  Firebase: <Firebase />,
-  Tailwind: <Tailwind />,
-  MongoDB: <Mongodb />,
-  Arduino: <Arduino />,
-  Python: <Python />,
-  Unity: <Unity />,
-  "C++": <CPlusPlus />,
-  "Github Actions": <GithubActions />,
-  Eslint: <Eslint />,
-  Prettier: <Prettier />,
-  Discord: <Discord />,
-  Jupyter: <Jupyter />,
-  Pandas: <Pandas />,
+  Javascript: <Javascript className="w-4" />,
+  "Next.js": <Nextjs className="w-4" />,
+  Firebase: <Firebase className="w-4" />,
+  Tailwind: <Tailwind className="w-4" />,
+  MongoDB: <Mongodb className="w-4" />,
+  Arduino: <Arduino className="w-4" />,
+  Python: <Python className="w-4" />,
+  Unity: <Unity className="w-4" />,
+  "C++": <CPlusPlus className="w-4" />,
+  "Github Actions": <GithubActions className="w-4" />,
+  Eslint: <Eslint className="w-4" />,
+  Prettier: <Prettier className="w-4" />,
+  Discord: <Discord className="w-4" />,
+  Jupyter: <Jupyter className="w-4" />,
+  Pandas: <Pandas className="w-4" />,
 };
 export const HACKPACKS = [
   {
@@ -46,7 +46,8 @@ export const HACKPACKS = [
       "Eslint",
       "Github Actions",
     ],
-    description: "A Firebase + Next.js Starter Pack",
+    description:
+      "A full-stack starter using Firebase and Next.js. Ideal for apps with real-time database needs, featuring Tailwind CSS and GitHub Actions.",
   },
   {
     link: "https://github.com/acm-ucr/firebase-nextjs-hackpack",
@@ -60,7 +61,8 @@ export const HACKPACKS = [
       "Eslint",
       "Github Actions",
     ],
-    description: "A MongoDB + Next.js Starter Pack",
+    description:
+      "A Next.js + MongoDB pack for scalable, document-based apps. Great for flexible data management with Tailwind styling.",
   },
   {
     link: "https://github.com/acm-ucr/nextjs-hackpack",
@@ -73,48 +75,56 @@ export const HACKPACKS = [
       "Eslint",
       "Github Actions",
     ],
-    description: "A Next.js Starter Pack",
+    description:
+      "Next.js starter for single-page apps with Tailwind CSS. Fast setup with built-in GitHub Actions for CI/CD.",
   },
   {
     link: "https://github.com/acm-ucr/arduino-hackpack",
     text: "Hardware",
     techs: ["Arduino", "C++"],
-    description: "An Arduino Starter Pack",
+    description:
+      "A starter for Arduino projects. Perfect for IoT, robotics, and hands-on hardware experiments with C++.",
   },
   {
     link: "https://github.com/acm-ucr/unity-hackpack",
     text: "Game Development",
     techs: ["Unity"],
-    description: "A Unity Starter Pack",
+    description:
+      "Unity starter pack for 2D and 3D games. Includes foundational scripts for quick game prototyping.",
   },
   {
     link: "https://github.com/acm-ucr/discord-javascript-hackpack",
     text: "Javascript Discord Bot",
     techs: ["Javascript", "Discord", "Prettier", "Eslint", "Github Actions"],
-    description: "A Javascript + Discord API Starter Pack",
+    description:
+      "JavaScript starter for Discord bots, with templates for commands and events. Great for chat automation and community tools.",
   },
   {
     link: "https://github.com/acm-ucr/discord-python-hackpack",
     text: "Python Discord Bot",
     techs: ["Python"],
-    description: "A Python + Discord API Starter Pack",
+    description:
+      "Python-based starter for Discord bots. Ideal for chat management and interactive bot functionalities.",
   },
   {
     link: "https://github.com/acm-ucr/discord-python-hackpack",
     text: "Computer Vision",
     techs: ["Python"],
-    description: "A Computer Vision Starter Pack",
+    description:
+      "Python starter pack for computer vision. Suitable for image processing and object detection projects.",
   },
   {
     link: "https://github.com/acm-ucr/python-hackpack",
     text: "Python",
     techs: ["Python"],
-    description: "A Python Starter Pack",
+    description:
+      "A general-purpose Python starter, useful for scripting, automation, and data analysis projects.",
   },
   {
     link: "https://github.com/acm-ucr/python-hackpack",
     text: "Machine Learning",
     techs: ["Python", "Jupyter", "Pandas"],
-    description: "A Machine Learning Starter Pack",
+    description:
+      "Python + Jupyter starter for machine learning. Perfect for data analysis and predictive modeling with Pandas.",
   },
 ];

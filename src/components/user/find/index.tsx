@@ -14,22 +14,28 @@ const ideas = [
     contact: "webdiv",
   },
   {
-    text: "Very Cool Project Idea",
-    techs: ["Web Development Stack"],
-    description: "We are cooked!",
-    contact: "webdiv",
+    text: "AI Chatbot for FAQs",
+    techs: ["Python", "NLTK", "Flask"],
+    description: "Answer common questions with AI.",
+    contact: "EmmaGarcia",
   },
   {
-    text: "Very Cool Project Idea",
-    techs: ["Web Development Stack"],
-    description: "We are cooked!",
-    contact: "webdiv",
+    text: "Study Planner",
+    techs: ["React", "Firebase"],
+    description: "Organize study sessions effectively.",
+    contact: "ChrisNelson",
   },
   {
-    text: "Very Cool Project Idea",
-    techs: ["Web Development Stack"],
-    description: "We are cooked!",
-    contact: "webdiv",
+    text: "Remote Team Collaboration App",
+    techs: ["React", "Node.js"],
+    description: "Tools for remote team productivity.",
+    contact: "AmandaEvans",
+  },
+  {
+    text: "Pet Care Tracker",
+    techs: ["React Native", "Firebase"],
+    description: "Track pet health and care needs.",
+    contact: "MatthewBrooks",
   },
 ];
 
@@ -39,10 +45,10 @@ const Find = () => {
   const { measureElement, getVirtualItems } = useVirtualizer({
     count: ideas.length,
     getScrollElement: () => ref.current,
-    estimateSize: () => 325,
+    estimateSize: () => 100,
     measureElement: (el) => {
-      if (el.clientHeight > 325) return el.clientHeight;
-      return 325;
+      if (el.clientHeight > 100) return el.clientHeight;
+      return 100;
     },
     lanes: 4,
     overscan: 4,
@@ -50,7 +56,7 @@ const Find = () => {
 
   const [search, setSearch] = useState(ideas);
 
-  console.log(search);
+  console.log(search, getVirtualItems(), measureElement);
 
   return (
     <div className="flex h-[calc(100vh-48px)] w-full flex-col">
@@ -58,13 +64,13 @@ const Find = () => {
         <Label className="pr-5 text-2xl font-bold">Team</Label>
       </div>
       <Toolbar data={ideas} setSearch={setSearch} />
-      <div className="relative h-full overflow-y-scroll">
+      <div ref={ref} className="relative h-full overflow-y-scroll">
         {ideas.length === 0 ? (
           <div className="flex h-full items-center justify-center">
             No Teams Available
           </div>
         ) : (
-          <div ref={ref}>
+          <div>
             {getVirtualItems().map(({ index, size, start }) => {
               if (index % 4) return null;
               const row = ideas.slice(index, index + 4);

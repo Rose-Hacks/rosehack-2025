@@ -30,7 +30,7 @@ const Hackpack = ({ text, techs, link, description }: props) => {
         {techs.map((tech, index) => (
           <div
             key={index}
-            className="flex items-center gap-2 text-gray-400"
+            className="flex items-center gap-1 text-gray-400"
             data-cy="hackpack-tech"
           >
             <div className="text-hackathon-blue-100" data-cy="hackpack-icon">
