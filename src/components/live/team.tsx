@@ -9,7 +9,7 @@ const Team = () => {
 
       <div className="flex w-full flex-wrap justify-center gap-10 md:w-3/5">
         {DIRECTORS.map((item, index) => (
-          <div className="w-1/3 md:w-1/5">
+          <div key={index} className="w-1/3 md:w-1/5">
             <Profile
               name={item.name}
               position={item.position}
