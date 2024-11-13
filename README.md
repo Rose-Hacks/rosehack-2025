@@ -1,5 +1,4 @@
-# Hackathon Website Template
-
+# Rosehack 2025 Website
 ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
@@ -12,11 +11,11 @@
 
 ## Figma
 
-[Hackathon Website Template Figma Design File](https://www.figma.com/file/YsmdMaZuYrkiaiWcB9XY1P/Hackathon-2024-Backend?type=design&node-id=0%3A1&mode=design&t=OkgKqUOkpAYqfjXU-1)
+[Rosehack 2025 Website Figma Design File](https://www.figma.com/design/f7pkPwceCQV53xNUitqX1g/Untitled?node-id=0-1&node-type=canvas&t=zQfKnf7KyoyOKAtD-0)
 
 ## Node.js
 
-Hackathon Website Template runs on Node.js Version 16.17.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
+Rosehack 2025 Website runs on Node.js Version 16.17.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
 
 ## Next.js
 
