@@ -164,9 +164,9 @@ const Toolbar = ({
             key={index}
             onClick={() => onClick(tag.value)}
             className={cn(
-              COLORS[tag.value]?.background,
-              COLORS[tag.value]?.text,
-              COLORS[tag.value]?.hover,
+              COLORS["view"]?.background,
+              COLORS["view"]?.text,
+              COLORS["view"]?.hover,
               "text-nowrap",
             )}
           >

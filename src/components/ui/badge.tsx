@@ -41,7 +41,7 @@ function Badge({ className, variant, type = "none", ...props }: BadgeProps) {
         className,
         background,
         text,
-        hover,
+        hover
       )}
       {...props}
     />
