@@ -4,8 +4,7 @@
 
 @layer base {
   @font-face {
-    font-family: 'Netron';
-    src: url('../fonts/Netron.woff2') format('woff2');
+    font-family: "Netron";
+    src: url("../fonts/Netron.woff2") format("woff2");
   }
 }
-
