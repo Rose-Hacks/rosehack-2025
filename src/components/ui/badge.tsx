@@ -31,8 +31,8 @@ export interface BadgeProps
   type?: keyof typeof COLORS;
 }
 
-function Badge({ className, variant, type = "none", ...props }: BadgeProps) {
-  const { background, text, hover } = COLORS[type];
+function Badge({ className, variant, type = "gray", ...props }: BadgeProps) {
+  const { background, text, hover } = COLORS[type]
 
   return (
     <div
@@ -41,7 +41,8 @@ function Badge({ className, variant, type = "none", ...props }: BadgeProps) {
         className,
         background,
         text,
-        hover
+        hover,
+        "border-4 border-red-500 text-black"
       )}
       {...props}
     />
