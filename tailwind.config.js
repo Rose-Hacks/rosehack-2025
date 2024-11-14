@@ -13,7 +13,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        poppins: ["var(--font-poppins)"],
+        netron: ["Netron", "sans-serif"],
       },
       colors: {
         hackathon: {
