@@ -50,6 +50,12 @@ module.exports = {
             white: "#fff",
           },
         },
+        rosehack: {
+          white: "#FDEFE8",
+          green: "#7AB9B54D",
+          "blue-100": "#68B5E1",
+          "blue-200": "#4092CE",
+        },
       },
       keyframes: {
         "accordion-down": {
