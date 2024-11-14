@@ -5,7 +5,6 @@ import Providers from "@/components/providers";
 import { Toaster } from "react-hot-toast";
 import { getServerSession } from "next-auth";
 import { options } from "@/utils/auth";
-import localFont from "next/font/local";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
