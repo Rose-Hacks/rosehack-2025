@@ -1,16 +1,15 @@
 /* eslint-disable new-cap */
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Providers from "@/components/providers";
 import { Toaster } from "react-hot-toast";
 import { getServerSession } from "next-auth";
 import { options } from "@/utils/auth";
 
-const poppins = Poppins({
+const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-poppins",
+  variable: "--font-montserrat",
 });
 
 type Props = {
@@ -23,7 +22,7 @@ const RootLayout = async ({ children }: Props) => {
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${poppins.variable} flex h-full flex-col bg-rosehack-blue-100 text-rosehack-white lg:flex-row`}
+        className={`${montserrat.className} flex h-full flex-col lg:flex-row`}
       >
         <div className="flex h-full w-full">
           <Providers session={session}>
