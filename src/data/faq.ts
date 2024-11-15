@@ -72,8 +72,7 @@ export const QUESTIONS: QuestionAnswer[] = [
       "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
   },
   {
-    question:
-      "My question isn't here.",
+    question: "My question isn't here.",
     answer:
       "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
   },
