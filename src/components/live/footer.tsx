@@ -24,7 +24,7 @@ const Footer = () => {
         <Image
           src={Windmill2}
           alt="hills"
-          className="w-fulll absolute left-[30%] top-[-50%] -z-10 h-4/5 md:right-[35%]"
+          className="w-fulll absolute right-[15%] top-[-50%] -z-10 h-4/5 md:right-[37%]"
         />
         <Image
           src={Windmill1}
