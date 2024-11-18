@@ -13,6 +13,7 @@ const Tracks = () => {
             number={index + 1}
             variant={index % 2 ? "dark" : "light"}
             side={Math.floor(index / 2) % 2 ? "right" : "left"}
+            key={index}
           >
             {track}
           </TrackCard>

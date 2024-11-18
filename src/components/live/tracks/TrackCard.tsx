@@ -5,6 +5,7 @@ type TrackCardProps = {
   side: "left" | "right";
   variant: "dark" | "light";
   children?: React.ReactNode;
+  key: number;
 };
 
 const TrackCard = (props: TrackCardProps) => {
@@ -17,7 +18,7 @@ const TrackCard = (props: TrackCardProps) => {
   const backSide = props.side === "left" ? "text-left" : "text-right";
 
   return (
-    <button className="group h-[200px] [perspective:1000px]">
+    <button key={props.key} className="group h-[200px] [perspective:1000px]">
       {props.number && (
         <div className="h-full transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus:[transform:rotateY(180deg)]">
           <div
