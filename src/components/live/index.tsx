@@ -11,7 +11,7 @@ import Footer from "./footer";
 
 const Live = () => {
   return (
-    <div className="flex w-full flex-col items-center">
+    <div className="flex w-full flex-col items-center overflow-clip">
       <Landing />
       <About />
       <Tracks />
