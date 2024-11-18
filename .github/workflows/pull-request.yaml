@@ -37,6 +37,7 @@ jobs:
 
   build:
     name: build
+    needs: [format, lint, images]
     runs-on: ubuntu-latest
 
     steps:
