@@ -8,9 +8,11 @@ const Committees = () => {
       <div className="mt-3 flex w-full flex-row flex-wrap justify-center gap-5 text-center sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 2xl:gap-20">
         {Object.entries(COMMITTEES).map(([committee, members], index) => (
           <div className="flex flex-col" key={index}>
-            <div className="mb-3 text-2xl font-semibold">{committee}</div>
+            <div className="mb-1 text-lg font-semibold md:mb-3 md:text-2xl">
+              {committee}
+            </div>
             {members.map((member, index) => (
-              <div key={index} className="text-lg">
+              <div key={index} className="text-base md:text-lg">
                 {member}
               </div>
             ))}
