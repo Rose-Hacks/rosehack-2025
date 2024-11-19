@@ -1,5 +1,43 @@
 import Evan from "@/public/board/evan.webp";
 
+export const COMMITTEES = {
+  Operations: [
+    "Sachin Chopra",
+    "Sachin Chopra",
+    "Sachin Chopra",
+    "Sachin Chopra",
+    "Sachin Chopra",
+  ],
+  Sponsorship: [
+    "Sachin Chopra",
+    "Sachin Chopra",
+    "Sachin Chopra",
+    "Sachin Chopra",
+    "Sachin Chopra",
+  ],
+  Marketing: [
+    "Sachin Chopras",
+    "Sachin Chopra",
+    "Sachin Chopra",
+    "Sachin Chopra",
+    "Sachin Chopra",
+  ],
+  Software: [
+    "Sachin Chopra",
+    "Sachin Chopra",
+    "Sachin Chopra",
+    "Sachin Chopra",
+    "Sachin Chopra",
+  ],
+  "UI / UX": [
+    "Sachin Chopra",
+    "Sachin Chopra",
+    "Sachin Chopra",
+    "Sachin Chopra",
+    "Sachin Chopra",
+  ],
+};
+
 export const DIRECTORS = [
   {
     name: "Avidethi",
