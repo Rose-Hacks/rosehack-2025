@@ -50,4 +50,3 @@ const TrackCard = (props: TrackCardProps) => {
 };
 
 export default TrackCard;
-
