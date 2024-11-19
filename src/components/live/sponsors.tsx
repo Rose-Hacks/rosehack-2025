@@ -1,17 +1,19 @@
+import SPONSORS from "@/data/live/sponsors";
+
 const Sponsors = () => {
   return (
-    <div className=" text-center bg-rosehack-blue-100 w-full">
-      <h1 className="font-netron text-3xl md:text-6xl mt-10 text-rosehack-white">Sponsors</h1>
-      <div className=" mt-10 mb-24 mx-auto flex items-center max-w-[1040px] justify-center flex-wrap">
-        {Array(5)
-          .fill(0)
-          .map((_, i) => (
-            <div key={i} className="flex rounded-full  h-24 w-24 md:h-64 md:w-64 overflow-hidden items-center justify-center m-5">
-              <img
-                src={`https://picsum.photos/200/300?random=${i}`}
-                alt="sponsor"
-                className="w-full"
-              />
+    <div className="w-full bg-rosehack-blue-100 text-center">
+      <h1 className="mt-10 font-netron text-3xl text-rosehack-white md:text-6xl">
+        Sponsors
+      </h1>
+      <div className="mx-auto mb-16 mt-7 flex max-w-[1040px] flex-wrap items-center justify-center md:mb-24 md:mt-10">
+        {SPONSORS &&
+          SPONSORS.map(({ name, image }, i) => (
+            <div
+              key={i}
+              className="m-3 flex h-48 w-48 items-center justify-center overflow-hidden rounded-full md:m-5 md:h-64 md:w-64"
+            >
+              <img src={image.src} alt={name} />
             </div>
           ))}
       </div>
