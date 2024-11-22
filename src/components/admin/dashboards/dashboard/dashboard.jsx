@@ -85,7 +85,6 @@ const Dashboard = ({
         searchableItems={searchableItems}
       />
 
-
       <Table
         page={page}
         searchParams={searchParams}

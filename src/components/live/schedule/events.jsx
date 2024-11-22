@@ -30,7 +30,9 @@ const Events = ({ events, totalDays }) => {
         {console.log(events)}
 
         {events.filter(({ day }) => day === selectedDay).length == 0 ? (
-          <>we got no events</>
+          <div className="flex flex-row justify-center text-lg font-semibold">
+            No events Available
+          </div>
         ) : (
           <>
             {events

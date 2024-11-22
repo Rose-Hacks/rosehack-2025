@@ -40,9 +40,9 @@ const Filters = ({ statuses, filters, setFilters }) => {
               onClick(parseInt(key), selectedFilters.includes(parseInt(key)))
             }
             className={cn(
-              COLORS[key]?.background,
-              COLORS[key]?.text,
-              COLORS[key]?.hover,
+              COLORS["gray"]?.background,
+              COLORS["gray"]?.text,
+              COLORS["gray"]?.hover,
             )}
           >
             {value}

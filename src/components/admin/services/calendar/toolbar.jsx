@@ -44,12 +44,18 @@ const CustomToolbar = ({ onView, onNavigate, date, setTag }) => {
           />
         </div>
         <div className="flex items-center justify-center gap-x-2">
-          <Badge type={"gray"} onClick={() => onView("month")}>month</Badge>
-          <Badge type={"gray"} onClick={() => onView("week")}>week</Badge>
+          <Badge type={"gray"} onClick={() => onView("month")}>
+            month
+          </Badge>
+          <Badge type={"gray"} onClick={() => onView("week")}>
+            week
+          </Badge>
         </div>
       </div>
       <div className="flex flex-col items-center gap-y-2 md:items-end">
-        <Badge onClick={() => setTag("all")} type={"gray"}>all events</Badge>
+        <Badge onClick={() => setTag("all")} type={"gray"}>
+          all events
+        </Badge>
         <div className="flex flex-col md:block">
           <div className="flex flex-wrap items-center justify-center gap-x-2 md:justify-end">
             {Object.entries(LABELS)
@@ -66,7 +72,6 @@ const CustomToolbar = ({ onView, onNavigate, date, setTag }) => {
               .map(([key], index) => (
                 <Badge key={index} type={key} onClick={() => setTag(key)}>
                   {key}
-                  {console.log("\n\n\nhelp me", key, COLORS[key])}
                 </Badge>
               ))}
           </div>

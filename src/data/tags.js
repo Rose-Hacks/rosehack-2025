@@ -100,4 +100,6 @@ export const COLORS = {
   0: mappings["yellow"],
   "-1": mappings["red"],
   none: mappings["none"],
+  read: mappings["green"],
+  unread: mappings["red"],
 };
