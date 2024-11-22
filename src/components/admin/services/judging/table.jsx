@@ -45,7 +45,7 @@ const Table = ({ data }) => {
               >
                 <div className="w-full rounded-xl bg-white p-3">
                   <div className="flex items-center justify-between">
-                    <Badge>{group.name}</Badge>
+                    <Badge> {group.name}</Badge>
                     <div className="ml-2 flex w-full justify-start">
                       {group.links &&
                         group.links

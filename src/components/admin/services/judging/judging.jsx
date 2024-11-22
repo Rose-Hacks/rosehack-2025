@@ -25,6 +25,7 @@ const Judging = () => {
       <Label className="pr-5 text-2xl font-bold">
         {view ? "Judges" : "Teams"}
       </Label>
+
       {filters === null || filters.length === 0 ? (
         <div className="flex flex-grow items-center justify-center">
           {view ? "No Judges Available" : "No Teams Available"}

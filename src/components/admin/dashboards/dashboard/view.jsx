@@ -38,7 +38,10 @@ const View = ({ title, src }) => {
         </DialogContent>
       </Dialog>
 
-      <Badge onClick={() => setModal({ src, title, visible: true })}>
+      <Badge
+        className="rounded-lg border-2 border-black text-black"
+        onClick={() => setModal({ src, title, visible: true })}
+      >
         view
       </Badge>
 
