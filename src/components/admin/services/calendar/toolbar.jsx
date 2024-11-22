@@ -4,7 +4,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 
-
 const CustomToolbar = ({ onView, onNavigate, date, setTag }) => {
   const handleShortcuts = useCallback(
     (e) => {
