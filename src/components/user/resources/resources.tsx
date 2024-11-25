@@ -10,18 +10,20 @@ const Resources = () => {
 
   return (
     <>
-      <Label className="pr-5 text-2xl font-bold">Hackpacks</Label>
-      <Toolbar data={HACKPACKS} setSearch={setSearch} />
-      <div className="mt-8 grid grid-cols-4 gap-4">
-        {search.map(({ text, techs, link, description }, index) => (
-          <Hackpack
-            key={index}
-            text={text}
-            techs={techs}
-            link={link}
-            description={description}
-          />
-        ))}
+      <div className="flex h-full flex-col gap-3 py-4">
+        <Label className="pr-5 text-2xl font-bold">Hackpacks</Label>
+        <Toolbar data={HACKPACKS} setSearch={setSearch} />
+        <div className="mt-8 grid grid-cols-4 gap-4">
+          {search.map(({ text, techs, link, description }, index) => (
+            <Hackpack
+              key={index}
+              text={text}
+              techs={techs}
+              link={link}
+              description={description}
+            />
+          ))}
+        </div>
       </div>
     </>
   );
