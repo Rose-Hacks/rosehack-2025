@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Countdown from "./countdown";
 import Button from "../button";
-import data from "@/data/config";
 import { InstagramIcon, LinkedinIcon, MailIcon } from "lucide-react";
 
 const Content = () => {
