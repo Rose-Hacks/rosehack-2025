@@ -22,7 +22,7 @@ const RootLayout = async ({ children }: Props) => {
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${montserrat.className} flex h-full flex-col lg:flex-row`}
+        className={`${montserrat.className} flex h-full flex-col bg-rosehack-blue-100 lg:flex-row`}
       >
         <div className="flex h-full w-full">
           <Providers session={session}>
