@@ -9,7 +9,7 @@ import { Instagram } from "lucide-react";
 const Footer = () => {
   return (
     <div className="bg-rosehack-100 relative mt-[20vh] flex h-full flex-col items-center justify-end md:h-screen">
-      <div className="relative w-full">
+      <div className="relative w-screen">
         <Image
           src={Clouds}
           alt="clouds"
