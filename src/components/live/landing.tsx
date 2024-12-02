@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import city1 from "@/public/assets/landing/citybg1.svg";
 import city2 from "@/public/assets/landing/citybg2.svg";
 import dome from "@/public/assets/landing/dome.svg";
