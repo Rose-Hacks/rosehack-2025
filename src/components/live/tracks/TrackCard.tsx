@@ -1,4 +1,3 @@
-import Placeholder from "@/public/assets/image 60.svg";
 import { cn } from "@/utils/tailwind";
 import Image from "next/image";
 
