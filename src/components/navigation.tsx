@@ -1,23 +1,31 @@
 "use client";
 
-import { useState } from "react";
 import LOGO from "@/app/favicon.ico";
 import Image from "next/image";
 import Link from "next/link";
 import { TABS } from "@/data/navigation";
 import { usePathname } from "next/navigation";
 import data from "@/data/config";
-import { LogIn, Globe, Code, MessageSquare } from "lucide-react";
+import { LogIn, Globe, Code, MessageSquare, ChevronDown } from "lucide-react";
 import { signOut } from "next-auth/react";
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+  Sidebar,
+  SidebarContent,
+  SidebarFooter,
+  SidebarGroup,
+  SidebarGroupContent,
+  SidebarGroupLabel,
+  SidebarHeader,
+  SidebarMenu,
+  SidebarMenuItem,
+} from "@/components/ui/sidebar";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "./ui/collapsible";
 
 const Navigation = () => {
-  const [expand, setExpand] = useState(false);
   const pathName = usePathname();
 
   const tabs = TABS[pathName.split("/")[1]];
@@ -41,6 +49,59 @@ const Navigation = () => {
   ];
 
   return (
+    <Sidebar className="text-white">
+      <SidebarHeader className="py-8">
+        <Image
+          src={LOGO}
+          className="mx-auto h-12 w-12"
+          alt={`${data.name} Logo`}
+        />
+      </SidebarHeader>
+      <SidebarContent>
+        {Object.entries(tabs).map(([title, subTabs], index) => (
+          <Collapsible defaultOpen className="group/collapsible">
+            <SidebarGroup key={index}>
+              <SidebarGroupLabel asChild className="text-xl font-bold">
+                <CollapsibleTrigger>
+                  {title}
+                  <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
+                </CollapsibleTrigger>
+              </SidebarGroupLabel>
+              <CollapsibleContent className="pt-3">
+                <SidebarGroupContent>
+                  <SidebarMenu>
+                    {subTabs.tabs &&
+                      subTabs.tabs.map((tab, index) => (
+                        <Link key={index} href={tab.link}>
+                          <SidebarMenuItem
+                            key={index}
+                            className="flex items-center pl-3 text-lg"
+                          >
+                            <span className="mr-2">{tab.icon}</span>
+                            {tab.name}
+                          </SidebarMenuItem>
+                        </Link>
+                      ))}
+                  </SidebarMenu>
+                </SidebarGroupContent>
+              </CollapsibleContent>
+            </SidebarGroup>
+          </Collapsible>
+        ))}
+      </SidebarContent>
+      <SidebarFooter className="mx-auto mb-1 grid grid-cols-4 *:mx-2">
+        {global.map((tab, index) => (
+          <Link key={index} href={tab.link} target="_blank">
+            {tab.icon}
+          </Link>
+        ))}
+        <LogIn onClick={() => signOut({ callbackUrl: "/", redirect: true })} />
+      </SidebarFooter>
+    </Sidebar>
+  );
+};
+
+/*
     <>
       <div className="fixed z-20 flex h-12 w-full items-center bg-hackathon-blue-200 lg:hidden">
         <div
@@ -130,7 +191,6 @@ const Navigation = () => {
         </div>
       </div>
     </>
-  );
-};
+    */
 
 export default Navigation;
