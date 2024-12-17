@@ -83,6 +83,7 @@
     "react-hot-toast": "^2.4.1",
     "react-use": "^17.5.1",
     "react-zxing": "^2.0.2",
+    "reactflow": "^11.11.4",
     "recharts": "^2.12.7",
     "rehype-pretty-code": "^0.14.0",
     "rehype-stringify": "^10.0.0",
