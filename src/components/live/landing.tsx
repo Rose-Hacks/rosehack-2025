@@ -36,7 +36,7 @@ const Landing = () => {
         <Image
           src={dome}
           alt="dome"
-          className="-bottom-14 right-[5%] z-30 hidden w-1/6 md:absolute md:bottom-[10%] md:w-1/3"
+          className="-bottom-14 right-[5%] z-30 hidden w-1/6 md:absolute md:bottom-[10%] md:block md:w-1/3"
         />
         <div className="absolute -left-[5%] top-[47.5%] flex w-full md:top-[15%]">
           <Image
