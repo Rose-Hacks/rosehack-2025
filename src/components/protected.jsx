@@ -4,7 +4,6 @@ import Navigation from "@/components/navigation";
 import { headers } from "next/headers";
 import { getSession } from "@/utils/auth";
 import SignIn from "@/utils/signin";
-import { Sidebar } from "lucide-react";
 import { SidebarTrigger } from "./ui/sidebar";
 
 const ProtectedPage = async ({ children, restrictions, title }) => {
