@@ -50,6 +50,18 @@ module.exports = {
             white: "#fff",
           },
         },
+        sidebar: {
+          DEFAULT: "#22577A",
+          foreground: "#F5F5F5",
+          primary: "#38A3A5",
+          "primary-foreground": "#F5F5F5",
+          accent: "#FFCF55",
+          "accent-foreground": "#22577A",
+          border: "#E7E7E7",
+          ring: "#FFCF55",
+          "primary-foreground": "#F5F5F5",
+          "accent-foreground": "#22577A",
+        },
       },
       keyframes: {
         "accordion-down": {
@@ -76,29 +88,11 @@ module.exports = {
             opacity: "0",
           },
         },
-        "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
-        },
-        "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "caret-blink": "caret-blink 1.25s ease-out infinite",
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
