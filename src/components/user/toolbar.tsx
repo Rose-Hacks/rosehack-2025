@@ -9,14 +9,21 @@ interface props {
 
 const Toolbar = ({ data, setSearch }: props) => {
   const onChange = (value: string) => {
-    const filter = data.filter(
-      ({ text, techs }) =>
-        text.toLowerCase().includes(value.toLowerCase()) ||
-        techs.some((tech: string) =>
-          tech.toLowerCase().includes(value.toLowerCase()),
-        ),
-    );
-    setSearch(filter);
+    console.log(value);
+
+    if (value === "") {
+      console.log("HELLO THE VALUE IS EMPTY", data);
+      setSearch(data);
+    } else {
+      const filter = data.filter(
+        ({ text, techs }) =>
+          text.toLowerCase().includes(value.toLowerCase()) ||
+          techs.some((tech: string) =>
+            tech.toLowerCase().includes(value.toLowerCase()),
+          ),
+      );
+      setSearch(filter);
+    }
   };
 
   return (

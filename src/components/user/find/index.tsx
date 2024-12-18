@@ -41,9 +41,10 @@ const ideas = [
 
 const Find = () => {
   const ref = useRef(null);
+  const [search, setSearch] = useState(ideas);
 
   const { measureElement, getVirtualItems } = useVirtualizer({
-    count: ideas.length,
+    count: search.length,
     getScrollElement: () => ref.current,
     estimateSize: () => 100,
     measureElement: (el) => {
@@ -54,10 +55,6 @@ const Find = () => {
     overscan: 4,
   });
 
-  const [search, setSearch] = useState(ideas);
-
-  console.log(search, getVirtualItems(), measureElement);
-
   return (
     <div className="flex h-[calc(100vh-48px)] w-full flex-col">
       <div className="pb-3 pt-4">
@@ -65,7 +62,7 @@ const Find = () => {
       </div>
       <Toolbar data={ideas} setSearch={setSearch} />
       <div ref={ref} className="relative h-full overflow-y-scroll">
-        {ideas.length === 0 ? (
+        {search.length === 0 ? (
           <div className="flex h-full items-center justify-center">
             No Teams Available
           </div>
@@ -73,7 +70,7 @@ const Find = () => {
           <div>
             {getVirtualItems().map(({ index, size, start }) => {
               if (index % 4) return null;
-              const row = ideas.slice(index, index + 4);
+              const row = search.slice(index, index + 4);
               return (
                 <div
                   key={`row: ${Math.floor(index / 4)}`}
