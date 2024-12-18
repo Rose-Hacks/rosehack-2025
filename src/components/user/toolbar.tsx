@@ -9,10 +9,7 @@ interface props {
 
 const Toolbar = ({ data, setSearch }: props) => {
   const onChange = (value: string) => {
-    console.log(value);
-
     if (value === "") {
-      console.log("HELLO THE VALUE IS EMPTY", data);
       setSearch(data);
     } else {
       const filter = data.filter(
