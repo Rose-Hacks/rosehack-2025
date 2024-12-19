@@ -10,7 +10,7 @@ interface props {
 
 const Idea = ({ text, techs, description, contact }: props) => {
   return (
-    <div className="rounded-lg bg-white p-3">
+    <div className="h-full w-full rounded-lg bg-white p-3">
       <p className="text-lg font-semibold">{text}</p>
       <div className="my-2 flex gap-3">
         {techs.map((technology, index) => (
