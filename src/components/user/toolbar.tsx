@@ -13,9 +13,9 @@ const Toolbar = ({ data, setSearch }: props) => {
       setSearch(data);
     } else {
       const filter = data.filter(
-        ({ text, techs }) =>
+        ({ text, languages }) =>
           text.toLowerCase().includes(value.toLowerCase()) ||
-          techs.some((tech: string) =>
+          languages.some((tech: string) =>
             tech.toLowerCase().includes(value.toLowerCase()),
           ),
       );
