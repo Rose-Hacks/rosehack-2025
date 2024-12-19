@@ -1,13 +1,13 @@
-import Release from "@/components/release";
-import RELEASES from "@/data/releases";
+// import Release from "@/components/release";
+// import RELEASES from "@/data/releases";
 import Live from "@/components/live";
 
 const Page = () => {
   return (
     <div className="w-full">
-      <Release release={RELEASES.LIVE}>
-        <Live />
-      </Release>
+      {/* <Release release={RELEASES.LIVE}> */}
+      <Live />
+      {/* </Release> */}
     </div>
   );
 };
