@@ -55,18 +55,25 @@ export const POST = async (req, { params }) => {
         element[attribute] = body[attribute];
       });
 
+      const statisticData = {
+        [`${params.type}.status.0`]: increment(1),
+        [`${params.type}.shirt.0.${element.shirt}`]: increment(1),
+        [`${params.type}.participants.school.0.${element.school}`]:
+          increment(1),
+      };
+      if ("diet" in element) {
+        for (const diet of element.diet) {
+          statisticData[`${params.type}.diet.0.${diet}`] = increment(1);
+        }
+      }
+
       await Promise.all([
         updateDoc(doc(db, "users", user.id), {
           ...element,
           timestamp: Timestamp.now(),
           [`roles.${params.type}`]: 0,
         }),
-        updateDoc(doc(db, "statistics", "statistics"), {
-          [`${params.type}.status.0`]: increment(1),
-          [`${params.type}.shirt.0.${element.size}`]: increment(1),
-          [`${params.type}.diet.0.${element.diet}`]: increment(1),
-          [`${params}.participants.school.0.${element.school}`]: increment(1),
-        }),
+        updateDoc(doc(db, "statistics", "statistics"), statisticData),
         send({
           email: user.email,
           id: "confirmation",
