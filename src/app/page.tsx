@@ -6,7 +6,7 @@ const Page = () => {
   return (
     <div className="w-full">
       {/* <Release release={RELEASES.LIVE}> */}
-        <Live />
+      <Live />
       {/* </Release> */}
     </div>
   );
