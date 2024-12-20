@@ -9,14 +9,18 @@ interface props {
 
 const Toolbar = ({ data, setSearch }: props) => {
   const onChange = (value: string) => {
-    const filter = data.filter(
-      ({ text, techs }) =>
-        text.toLowerCase().includes(value.toLowerCase()) ||
-        techs.some((tech: string) =>
-          tech.toLowerCase().includes(value.toLowerCase()),
-        ),
-    );
-    setSearch(filter);
+    if (value === "") {
+      setSearch(data);
+    } else {
+      const filter = data.filter(
+        ({ text, languages }) =>
+          text.toLowerCase().includes(value.toLowerCase()) ||
+          languages.some((tech: string) =>
+            tech.toLowerCase().includes(value.toLowerCase()),
+          ),
+      );
+      setSearch(filter);
+    }
   };
 
   return (

@@ -27,8 +27,6 @@ const Events = ({ events, totalDays }) => {
         ))}
       </div>
       <div className="mt-6 h-full w-10/12">
-        {console.log(events)}
-
         {events.filter(({ day }) => day === selectedDay).length == 0 ? (
           <div className="flex flex-row justify-center text-lg font-semibold">
             No events Available
