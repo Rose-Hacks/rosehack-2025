@@ -29,10 +29,13 @@ const Form = ({
   return (
     <div className="overflow-scroll-y flex h-full w-full flex-col items-center">
       <div className="mt-4 flex w-full flex-row justify-end space-x-4">
-        <Button asChild>
+        <Button variant="form" asChild>
           <Link href="/">Back to Home</Link>
         </Button>
-        <Button onClick={() => signOut({ callbackUrl: "/", redirect: true })}>
+        <Button
+          variant="form"
+          onClick={() => signOut({ callbackUrl: "/", redirect: true })}
+        >
           Sign Out
         </Button>
       </div>
