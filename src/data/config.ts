@@ -19,7 +19,7 @@ const data: config = {
   name: "ROSEHACK",
   short_name: "Rosehack Site",
   email: "rosehackucr@gmail.com",
-  description: "DESCRIPTION",
+  description: "A women-centric 24 hour hackathon in UC Riverside",
   length: 24,
   date: new Date("2025-01-25T09:00:00"),
   end: new Date("2025-01-26T09:00:00"),
