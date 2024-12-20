@@ -86,7 +86,7 @@ const CheckIn = () => {
     <div className="flex h-full flex-col gap-3 py-4 font-poppins">
       <Label className="pr-5 text-2xl font-bold">Checkin</Label>
       <div className="flex flex-col items-center justify-center">
-        <div className="flex flex-col gap-3 overflow-hidden py-3">
+        <div className="flex w-full flex-col gap-3 overflow-hidden py-3">
           {events && (
             <Select
               items={events}
