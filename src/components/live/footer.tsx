@@ -5,11 +5,13 @@ import LOGO from "@/public/assets/RoseHackLogo.svg";
 import Windmill1 from "@/public/assets/farWindmill.svg";
 import Windmill2 from "@/public/assets/middleWindmill.svg";
 import Windmill3 from "@/public/assets/closeWindMill.svg";
-import { Instagram } from "lucide-react";
+import Link from "next/link";
+import { Instagram, Linkedin, Mail } from "lucide-react";
+
 const Footer = () => {
   return (
     <div className="bg-rosehack-100 relative mt-[20vh] flex h-full flex-col items-center justify-end md:h-screen">
-      <div className="relative w-full">
+      <div className="relative w-screen">
         <Image
           src={Clouds}
           alt="clouds"
@@ -50,9 +52,21 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex h-full flex-col gap-2 text-white md:flex-row md:gap-4">
-          <Instagram className="md:h-14 md:w-14" />
-          <Instagram className="md:h-14 md:w-14" />
-          <Instagram className="md:h-14 md:w-14" />
+          <Link href={"https://www.instagram.com/rosehackucr/"}>
+            <Instagram
+              className="duration-300 hover:-translate-y-2 md:h-12 md:w-12"
+              target="_blank"
+            />
+          </Link>
+          <Link href={"https://www.linkedin.com/company/rose-hack/mycompany/"}>
+            <Linkedin
+              className="duration-300 hover:-translate-y-2 md:h-12 md:w-12"
+              target="_blank"
+            />
+          </Link>
+          <Link href={"mailto:rosehackucr@gmail.com"} target="_blank">
+            <Mail className="duration-300 hover:-translate-y-2 md:h-12 md:w-12" />
+          </Link>
         </div>
       </div>
     </div>

@@ -5,12 +5,12 @@ import { InstagramIcon, LinkedinIcon, MailIcon } from "lucide-react";
 
 const Content = () => {
   return (
-    <div className="flex w-3/4 flex-col items-center justify-center gap-2 md:w-1/4">
+    <div className="flex w-3/4 flex-col items-center justify-center gap-2 md:w-1/3">
       <div className="flex w-full flex-col items-center justify-center gap-4 rounded-3xl border-4 border-rosehack-white/30 bg-rosehack-green p-5 font-netron">
-        <div className="flex items-center justify-center rounded-3xl border-4 border-rosehack-white/30 bg-rosehack-green px-10 py-2 text-center font-netron text-xl text-rosehack-white md:py-3 md:text-3xl">
+        <div className="flex items-center justify-center whitespace-nowrap rounded-3xl border-4 border-rosehack-white/30 bg-rosehack-green px-7 py-1.5 text-center font-netron text-lg text-rosehack-white md:whitespace-normal md:py-3 md:text-3xl">
           ROSE HACK 2025
         </div>
-        <div className="flex items-center justify-center rounded-3xl border-4 border-rosehack-white/30 bg-rosehack-green px-10 text-center font-netron text-xl text-rosehack-white md:py-1 md:text-2xl">
+        <div className="flex items-center justify-center whitespace-nowrap rounded-3xl border-4 border-rosehack-white/30 bg-rosehack-green px-7 py-1 text-center font-netron text-lg text-rosehack-white md:whitespace-normal md:text-2xl">
           JANUARY 25-26
         </div>
         <Countdown />
