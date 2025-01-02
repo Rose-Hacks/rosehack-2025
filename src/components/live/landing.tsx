@@ -24,7 +24,7 @@ const Landing = () => {
         alt="clouds"
         className="absolute right-0 top-0 w-full"
       />
-      <div className="relative h-full">
+      <div className="relative h-full w-full">
         <div className="relative -bottom-[50%] z-0 md:-bottom-36">
           <Image
             src={city2}
