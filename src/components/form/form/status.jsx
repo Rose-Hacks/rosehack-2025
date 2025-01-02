@@ -19,7 +19,9 @@ const Status = ({ object, statuses, setState }) => {
         If you believe that your status is incorrect, please reach out to us
         immediately.
       </p>
-      <Button onClick={() => setState(1)}>Apply</Button>
+      <Button variant="submit" onClick={() => setState(1)}>
+        Apply
+      </Button>
     </div>
   );
 };
