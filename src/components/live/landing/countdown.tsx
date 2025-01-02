@@ -4,8 +4,8 @@ import data from "@/data/config";
 
 const Digits = ({ value, text }: { value: number; text: string }) => {
   return (
-    <div className="flex flex-col items-center gap-2">
-      <p className="m-0 mb-0 flex gap-1 lg:!gap-1">
+    <div className="flex flex-col items-center gap-2 last:hidden sm:last:flex">
+      <div className="m-0 mb-0 flex gap-1 lg:!gap-1">
         {value
           .toString()
           .padStart(2, "0")
@@ -18,7 +18,7 @@ const Digits = ({ value, text }: { value: number; text: string }) => {
               {digit}
             </p>
           ))}
-      </p>
+      </div>
       <p className="font-montserrat text-xs md:text-sm">{text}</p>
     </div>
   );
@@ -60,7 +60,7 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-4 gap-10 font-netron text-rosehack-white">
+    <div className="inline-flex gap-6 font-netron font-bold text-rosehack-white">
       {Object.entries(time).map(([text, value], index) => (
         <Digits key={index} text={text} value={value} />
       ))}
