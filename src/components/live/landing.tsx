@@ -3,9 +3,9 @@ import Content from "./landing/content";
 import Logo from "@/public/assets/landing/RHLogo.svg";
 import city1 from "@/public/assets/landing/citybg1.svg";
 import city2 from "@/public/assets/landing/citybg2.svg";
-import dome from "@/public/assets/landing/dome.svg";
+// import dome from "@/public/assets/landing/dome.svg";
 import clouds from "@/public/assets/landing/clouds.svg";
-import grass from "@/public/assets/landing/grass.svg";
+import grass from "@/public/assets/landing/cityforeground.svg";
 import box from "@/public/assets/landing/box_tower.svg";
 import basic from "@/public/assets/landing/basic_tower.svg";
 import SpaceNeedle from "@/public/assets/landing/glass_tower.svg";
@@ -33,34 +33,34 @@ const Landing = () => {
           />
           <Image src={city1} alt="clouds" className="relative z-10" />
         </div>
-        <Image
+        {/* <Image
           src={dome}
           alt="dome"
           className="-bottom-14 right-[5%] z-30 hidden w-1/6 md:absolute md:bottom-[10%] md:block md:w-1/3"
-        />
+        /> */}
         <div className="absolute -left-[5%] top-[47.5%] flex w-full md:top-[15%]">
           <Image
             src={box}
             alt="dome"
-            className="relative left-[6.5%] top-4 z-30 w-[10%] md:left-[8%] md:top-14 md:w-fit"
+            className="relative left-[6.5%] top-4 z-20 w-[10%] md:left-[8%] md:top-14 md:w-fit"
           />
-          <Image src={SpaceNeedle} alt="dome" className="z-30 w-1/5 md:w-fit" />
+          <Image src={SpaceNeedle} alt="dome" className="z-20 w-1/5 md:w-fit" />
           <Image
             src={basic}
             alt="dome"
-            className="relative right-[6%] top-3 z-30 w-[11%] md:right-[7%] md:top-10 md:w-fit"
+            className="relative right-[6%] top-3 z-20 w-[11%] md:right-[7%] md:top-10 md:w-fit"
           />
         </div>
         <div className="absolute -right-[25%] top-[48.5%] flex gap-3 md:right-[5%] md:top-[26%] md:gap-10">
           <Image
             src={twintower1}
             alt="dome"
-            className="relative top-4 z-30 w-1/6 md:top-16 md:w-fit"
+            className="relative top-4 z-20 w-1/6 md:top-16 md:w-fit"
           />
           <Image
             src={twintower2}
             alt="dome"
-            className="relative top-2 z-30 w-1/6 md:top-0 md:w-fit"
+            className="relative top-2 z-20 w-1/6 md:top-0 md:w-fit"
           />
         </div>
         <Image

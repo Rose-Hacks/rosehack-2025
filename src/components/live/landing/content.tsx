@@ -15,7 +15,7 @@ const Content = () => {
         </div>
         <Countdown />
 
-        <div className="flex w-4/5 flex-col justify-center gap-2 md:w-11/12 md:flex-row md:flex-wrap">
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-2">
           <Button text="REGISTER" link="/form/participant" />
           <Button text="VOLUNTEER" link="/form/volunteer" />
           <Button text="MENTOR" link="/form/mentor" />
