@@ -53,6 +53,7 @@ module.exports = {
         rosehack: {
           white: "#FDEFE8",
           green: "#7AB9B54D",
+          darkgreen: "#4f7b80",
           "blue-100": "#68B5E1",
           "blue-200": "#4092CE",
         },
