@@ -7,73 +7,62 @@ export const QUESTIONS: QuestionAnswer[] = [
   {
     question: "What is Rosehack?",
     answer:
-      "This repo centralizes the backbone for all websites. It serves as a template for mainly the backend, user registration, user dashboard and and admin portal for organizers. The frontend is built out by respective hackathon committees.",
+      "Rose Hack is the Inland Empire's annual women-centric hackathon taking place January 25-26st, 2024. Our goal is to bring together underrepresented groups in STEM, such as females and people of color, to encourage a unique network and create innovative projects through their shared passion in STEM.",
   },
   {
     question: "How can I apply for Rosehack?",
-    answer:
-      "No experience is required. You can reach out to us on discord and start working! We have weekly meetings and tasks via GitHub",
+    answer: "You can find our registration form at the top of the website!",
   },
   {
     question: "When are the applications due?",
     answer:
-      "Attend weekly meetings for full onboarding. You can clone the repo, install necesssary packages with `npm i`(download node.js first). You would need to reach out to a swe lead for repo secrets file. Follow the steps on the readme for more.",
+      "Applications are due on January 24th at 11:59 PM. Don't wait, click the link in the website to join!",
   },
   {
     question: "Where will the hackathon be held?",
     answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+      "It will take place in your favorite engineering buildings at UCR! It will be held throughout Winston Chung Hall and certain BCOE buildings and classrooms. There will be a comprehensive list of activities and their locations in the final itinerary!",
   },
   {
     question: "I have no experience, can I still apply?",
     answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+      "All the more reason to come and experience a hackathon! You can learn from the various workshops, speakers, and mentors, and they can help guide a personal project of your choice if you want!",
   },
   {
     question: "How do I prepare for Rosehack?",
     answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+      "You can find a team , brainstorm some cool ideas, and make sure you have your tools and tech ready to go. Most importantly, be ready to learn and have fun!",
   },
   {
     question: "Will food be provided? Will it be free or do I have to pay?",
-    answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+    answer: "Food will be proviided and will be paid and provided for.",
   },
   {
     question: "Are there prizes?",
     answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+      "Yes! Be sure to register for our event to learn more about the prizes we have to offer!",
   },
   {
     question: "Does it cost money to join Rosehack?",
-    answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+    answer: "No, participation is completely free!",
   },
   {
-    question: "How do I find my team?",
+    question: "How do I find a team?",
     answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+      "To help you find a team, we will also be hosting mini-socials at the beginning of the event itself to allow you to meet more people. There will also be channels allocated in our Discord where you will be able to find participants who share common interests as you. Please note that teams are not required! You may also work individually.",
   },
   {
     question: "How many members can be on a team?",
-    answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+    answer: "1-4 members.",
   },
   {
     question:
       "Do I have to join the discord server? What if I don't have discord?",
     answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
-  },
-  {
-    question:
-      "Do I have to design the whole time and submit a project at the end?",
-    answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+      "It is highly recommended that you join the Discord Server to stay updated on the event! If you do not have Discord, no worries. We will also have in-person reminders throughout the day of the event.",
   },
   {
     question: "My question isn't here.",
-    answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+    answer: "Feel free to email us your question at rosehackucr@gmail.com!",
   },
 ];
