@@ -3,7 +3,7 @@ import aboutUs from "@/public/assets/aboutUs.svg";
 
 const About = () => {
   return (
-    <div className="relative mb-10 flex w-full flex-row items-center justify-center md:justify-between">
+    <div className="relative -mt-[62%] mb-[20%] flex w-full flex-row items-center justify-center md:justify-between lg:-mt-[10%] lg:mb-10">
       <Image
         src={aboutUs}
         alt="Traffic Light Asset"
@@ -23,7 +23,8 @@ const About = () => {
         <div className="text-sm md:text-2xl 2xl:text-4xl">
           Rose Hack’s mission is to encourage individuals from underrepresented
           groups in STEM to gain experience, create strong networks, and build
-          amazing projects through their shared passions in Science and Techno
+          amazing projects through their shared passions in Science and
+          Technology
         </div>
       </div>
     </div>
