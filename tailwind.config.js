@@ -55,7 +55,6 @@ module.exports = {
           white: "#FDEFE8",
           darkgreen: "#4f7b80",
           green: "#7AB9B5",
-          darkgreen: "#4f7b80",
           "blue-100": "#68B5E1",
           "blue-200": "#4092CE",
         },
