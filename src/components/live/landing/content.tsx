@@ -19,7 +19,6 @@ const Content = () => {
           <Button text="REGISTER" link="/form/participant" />
           <Button text="VOLUNTEER" link="/form/volunteer" />
           <Button text="MENTOR" link="/form/mentor" />
-          <Button text="SPONSOR" link="/form/sponsor" />
         </div>
         <div className="flex flex-row gap-3 text-rosehack-white">
           <Link
