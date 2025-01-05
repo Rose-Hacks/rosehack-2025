@@ -13,9 +13,8 @@ import twintower2 from "@/public/assets/landing/tower2.svg";
 
 const Landing = () => {
   return (
-<<<<<<< HEAD
     <div className="flex h-screen w-full flex-col items-center justify-center bg-rosehack-blue-100 md:h-full">
-      <div className="absolute top-5 z-50 flex w-fit flex-col items-center justify-center gap-4 md:top-36 md:w-full">
+      <div className="absolute top-5 z-50 flex w-fit flex-col items-center justify-center md:top-0 md:w-full">
         <Image src={Logo} alt="Rose Hack Logo" className="w-1/4 md:w-fit" />
         <Content />
       </div>
