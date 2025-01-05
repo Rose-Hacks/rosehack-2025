@@ -257,7 +257,11 @@ const Questions = ({
         </Link>
       )}
       <div className="flex justify-center">
-        <Button onClick={handleSubmit} className="bg-rosehack-blue-200" disabled={loading}>
+        <Button
+          onClick={handleSubmit}
+          className="bg-rosehack-blue-200"
+          disabled={loading}
+        >
           Submit
         </Button>
       </div>

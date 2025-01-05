@@ -37,7 +37,6 @@ const ProtectedPage = async ({ children, restrictions, title }) => {
   }
 
   const navigation = RegExp(/user\/|admin\//).test(pathName);
-  const backdrop = RegExp(/admin\/|user\/|form\//).test(pathName);
 
   return (
     <>
