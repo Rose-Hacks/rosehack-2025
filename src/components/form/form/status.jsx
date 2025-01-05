@@ -8,7 +8,7 @@ const Status = ({ object, statuses, setState }) => {
       <p>
         Hello <b>{object.name}</b>, your status is currently
       </p>
-      <Badge>{statuses[object.roles[object.form]]}</Badge>
+      <Badge variant={"secondary"}>{statuses[object.roles[object.form]]}</Badge>
 
       <p data-cy="status-confirmation" className="text-center">
         You have already filled out the form. If you wish to change any

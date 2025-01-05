@@ -8,3 +8,13 @@
     src: url("../fonts/Netron.woff2") format("woff2");
   }
 }
+
+@layer base {
+  :root {
+    @apply text-rosehack-white;
+  }
+
+  tr {
+    @apply text-black;
+  }
+}

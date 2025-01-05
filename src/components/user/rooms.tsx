@@ -9,7 +9,7 @@ const Rooms = (): React.ReactNode => {
       {rooms.map((room: string, index: number) => (
         <div
           key={index}
-          className="mb-3 mr-3 inline-block rounded-lg bg-hackathon-green-100 p-2 text-hackathon-tags-green-text shadow"
+          className="mb-3 mr-3 inline-block rounded-lg bg-hackathon-green-100 p-2 text-rosehack-green shadow"
         >
           {room}
         </div>

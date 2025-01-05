@@ -26,6 +26,7 @@ const Toolbar = ({ data, setSearch }: props) => {
       onClear={() => onChange("")}
       onChange={(e) => onChange(e.target.value)}
       maxLength={100}
+      className="bg-white"
     />
   );
 };

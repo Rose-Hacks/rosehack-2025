@@ -16,6 +16,7 @@ module.exports = {
         netron: ["Netron", "sans-serif"],
       },
       colors: {
+        white: "#FDEFE8",
         hackathon: {
           "blue-100": "#38A3A5",
           "blue-200": "#22577A",
@@ -52,8 +53,8 @@ module.exports = {
         },
         rosehack: {
           white: "#FDEFE8",
-          green: "#7AB9B54D",
           darkgreen: "#4f7b80",
+          green: "#7AB9B5",
           "blue-100": "#68B5E1",
           "blue-200": "#4092CE",
         },

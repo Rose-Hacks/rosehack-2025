@@ -40,8 +40,8 @@ const Form = ({
         </Button>
       </div>
       <div className="flex w-10/12 flex-col items-center pb-12 pt-5 md:w-1/2 xl:w-1/3">
-        <Image src={LOGO} className="m-4 w-1/3" alt="Logo" />
-        <p className="m-0 w-full rounded-t-xl bg-rosehack-blue-200 px-4 py-4 text-xl font-semibold">
+        <Image src={LOGO} className="m-4 w-1/4" alt="Logo" />
+        <p className="m-0 w-full rounded-t-xl bg-rosehack-blue-200 px-4 py-4 text-xl font-semibold text-white">
           {header}
         </p>
         <div className="rounded-b-xl bg-rosehack-white p-8">

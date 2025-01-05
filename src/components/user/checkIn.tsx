@@ -23,9 +23,9 @@ const CheckinPage = () => {
   return (
     <div className="flex h-[calc(100vh-48px)] w-full flex-col">
       <div className="pb-3 pt-4">
-        <Label className="pr-5 text-2xl font-bold">Checkin</Label>
+        <Label className="pr-5 font-netron text-2xl font-bold">Checkin</Label>
       </div>
-      <div className="flex h-full flex-col lg:flex-row">
+      <div className="flex h-full flex-col text-white lg:flex-row">
         <div className="m-auto flex flex-col items-center">
           <Image
             width={125}
@@ -42,7 +42,7 @@ const CheckinPage = () => {
             value={`${session.user.id}&${date.toISOString()}&${
               session.user.name
             }`}
-            className="h-2/3 w-2/3"
+            className="h-2/3 w-2/3 mix-blend-multiply"
           />
         </div>
       </div>

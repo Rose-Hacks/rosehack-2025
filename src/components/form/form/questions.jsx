@@ -65,9 +65,9 @@ const Questions = ({
   };
 
   return (
-    <div className="flex w-full flex-col gap-5">
+    <div className="flex w-full flex-col gap-5 text-black">
       {Object.values(fields).map((field, index) => (
-        <div key={index}>
+        <div key={index} className="text-black">
           {field.input === "description" &&
             field.texts.map((description, index) => (
               <div key={index}>
@@ -84,7 +84,10 @@ const Questions = ({
           {field.input === "input" && (
             <>
               <div className="pb-1">
-                <Label htmlFor={field.name} className="font-semibold">
+                <Label
+                  htmlFor={field.name}
+                  className="font-semibold text-black"
+                >
                   {field.title}
                   {field.required && <span className="text-red-500">*</span>}
                 </Label>
@@ -175,7 +178,9 @@ const Questions = ({
                       key={index}
                     >
                       <RadioGroupItem value={option} id={option} />
-                      <Label htmlFor={option}>{option}</Label>
+                      <Label className="text-black" htmlFor={option}>
+                        {option}
+                      </Label>
                     </div>
                   ))}
                 </div>
@@ -185,7 +190,10 @@ const Questions = ({
           {field.input === "textarea" && (
             <>
               <div className="mb-1">
-                <Label htmlFor={field.name} className="font-semibold">
+                <Label
+                  htmlFor={field.name}
+                  className="font-semibold text-black"
+                >
                   {field.title}
                   {field.required && <span className="text-red-500">*</span>}
                 </Label>

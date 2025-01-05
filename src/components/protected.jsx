@@ -4,6 +4,8 @@ import Navigation from "@/components/navigation";
 import { headers } from "next/headers";
 import { getSession } from "@/utils/auth";
 import SignIn from "@/utils/signin";
+import Scene from "@/public/assets/FullWindmillScene.svg";
+import Image from "next/image";
 
 const ProtectedPage = async ({ children, restrictions, title }) => {
   const session = await getSession();
@@ -41,9 +43,16 @@ const ProtectedPage = async ({ children, restrictions, title }) => {
   return (
     <>
       <title>{title}</title>
+      <Image
+        src={Scene}
+        alt="Windmill Scene"
+        width={250}
+        height={250}
+        className="fixed bottom-0 -z-50 w-full"
+      />
       {navigation && <Navigation />}
-      <div className="z-0 flex h-screen w-full items-start justify-center overflow-x-hidden bg-rosehack-blue-100 py-12 lg:py-0">
-        <div className="h-full w-11/12">{children}</div>
+      <div className="z-0 flex h-full w-screen items-start justify-center py-12 lg:py-0">
+        <div className="h-full w-11/12 text-black">{children}</div>
       </div>
     </>
   );

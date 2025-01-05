@@ -11,7 +11,7 @@ const Tile = ({ icon, text, link }) => {
         {icon}
       </div>
       <div
-        className="text-2xl font-bold leading-9 text-black"
+        className="font-netron text-2xl font-bold leading-9 text-black"
         data-cy="tile-text"
       >
         {text}
