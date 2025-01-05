@@ -3,7 +3,6 @@ import Content from "./landing/content";
 import Logo from "@/public/assets/landing/RHLogo.svg";
 import city1 from "@/public/assets/landing/citybg1.svg";
 import city2 from "@/public/assets/landing/citybg2.svg";
-// import dome from "@/public/assets/landing/dome.svg";
 import clouds from "@/public/assets/landing/clouds.svg";
 import grass from "@/public/assets/landing/cityforeground.svg";
 import box from "@/public/assets/landing/box_tower.svg";
@@ -14,6 +13,7 @@ import twintower2 from "@/public/assets/landing/tower2.svg";
 
 const Landing = () => {
   return (
+<<<<<<< HEAD
     <div className="flex h-screen w-full flex-col items-center justify-center bg-rosehack-blue-100 md:h-full">
       <div className="absolute top-5 z-50 flex w-fit flex-col items-center justify-center gap-4 md:top-36 md:w-full">
         <Image src={Logo} alt="Rose Hack Logo" className="w-1/4 md:w-fit" />
