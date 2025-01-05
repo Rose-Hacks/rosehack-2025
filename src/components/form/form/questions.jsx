@@ -112,6 +112,7 @@ const Questions = ({
               setUser={setObject}
               required={field.required}
               searchable={field.searchable}
+              className="bg-rosehack-white"
             />
           )}
           {field.input === "checkboxes" && (
@@ -192,7 +193,7 @@ const Questions = ({
               </div>
               <Textarea
                 data-cy={`${field.title}-textarea`}
-                className="border-1 w-full resize-none border border-black pl-3 placeholder:text-hackathon-gray-200 focus:outline-none"
+                className="border-1 w-full resize-none border border-black bg-rosehack-white pl-3 placeholder:text-hackathon-gray-200 focus:outline-none"
                 maxLength={500}
                 value={object[field.name]}
                 onChange={(e) =>
@@ -222,7 +223,7 @@ const Questions = ({
         <Link
           href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
           target="_blank"
-          className="mt-1 flex items-center text-rosehack-blue-100 no-underline hover:text-opacity-65"
+          className="mt-1 flex items-center text-rosehack-darkgreen no-underline hover:text-opacity-65"
         >
           MLH Code of Conduct
           <SquareArrowOutUpRight className="mx-2" size={15} />
@@ -230,7 +231,7 @@ const Questions = ({
         <Link
           href="https://mlh.io/privacy"
           target="_blank"
-          className="mt-3 flex items-center text-rosehack-blue-100 no-underline hover:text-opacity-65"
+          className="mt-3 flex items-center text-rosehack-darkgreen no-underline hover:text-opacity-65"
         >
           MLH Privacy Policy
           <SquareArrowOutUpRight className="mx-2" size={15} />
@@ -238,7 +239,7 @@ const Questions = ({
         <Link
           href="https://github.com/MLH/mlh-policies/blob/main/contest-terms.md"
           target="_blank"
-          className="mt-3 flex items-center text-rosehack-blue-100 no-underline hover:text-opacity-65"
+          className="mt-3 flex items-center text-rosehack-darkgreen no-underline hover:text-opacity-65"
         >
           MLH Contest Terms and Conditions
           <SquareArrowOutUpRight className="mx-2" size={15} />
@@ -256,7 +257,11 @@ const Questions = ({
         </Link>
       )}
       <div className="flex justify-center">
-        <Button variant="submit" onClick={handleSubmit} disabled={loading}>
+        <Button
+          onClick={handleSubmit}
+          className="bg-rosehack-blue-200"
+          disabled={loading}
+        >
           Submit
         </Button>
       </div>
