@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Clouds from "@/public/assets/Clouds.svg";
 import Hills from "@/public/assets/hill.svg";
-import LOGO from "@/public/assets/RoseHackLogo.svg";
+import LOGO from "@/public/assets/RoseHackLogo.webp";
 import Windmill1 from "@/public/assets/farWindmill.svg";
 import Windmill2 from "@/public/assets/middleWindmill.svg";
 import Windmill3 from "@/public/assets/closeWindMill.svg";
@@ -38,11 +38,7 @@ const Footer = () => {
       </div>
       <div className="absolute my-1 flex w-full items-end justify-between px-2 md:my-4 md:items-center md:px-10">
         <div className="flex">
-          <Image
-            src={LOGO}
-            alt="RoseHack Logo"
-            className="h-1/5 w-1/5 md:h-full md:w-full"
-          />
+          <Image src={LOGO} alt="RoseHack Logo" className="h-1/5 w-1/5" />
           <div className="flex flex-col justify-center text-white">
             <p className="font-netron text-base md:text-3xl">ROSEHACK 2025</p>
             <p className="whitespace-nowrap text-xs md:text-xl">
