@@ -34,7 +34,7 @@ const send = async ({
   preview,
 }: params): Promise<CreateEmailResponse> => {
   const { data, error } = await resend.emails.send({
-    from: "Hackathon <info@hackathon.com>",
+    from: "Rosehack no-reply <info@rosehack.com>",
     to: [email],
     subject: subject,
     text: `Hello ${name},\n\nYour position: ${position}\nPreview: ${preview}`,
