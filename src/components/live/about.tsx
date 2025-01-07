@@ -18,7 +18,8 @@ const About = () => {
           Rose Hack is UC Riverside’s 24-hour hackathon, one of the few
           women-centric hackathons in California! Founded by the female leaders
           of the Association for Computing Machinery (ACM-W) and the Society of
-          Women Engineers (SWE).
+          Women Engineers (SWE). Rose Hack is hosted by Women in Computing
+          (WinC).
         </div>
         <div className="text-sm md:text-2xl 2xl:text-4xl">
           Rose Hack’s mission is to encourage individuals from underrepresented
