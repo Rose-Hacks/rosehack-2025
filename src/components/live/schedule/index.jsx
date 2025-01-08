@@ -1,5 +1,6 @@
 import { api } from "@/utils/api";
 import Events from "./events";
+import Title from "../title";
 
 const Schedule = async () => {
   const { items } = await api({
@@ -26,7 +27,12 @@ const Schedule = async () => {
     "Sunday",
   ];
 
-  return <Events events={items} totalDays={totalDays} />;
+  return (
+    <div className="flex w-full flex-col items-center">
+      <Title title="SCHEDULE" />
+      <Events events={items} totalDays={totalDays} />
+    </div>
+  );
 };
 
 export default Schedule;
