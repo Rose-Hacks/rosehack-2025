@@ -10,14 +10,15 @@ const Events = ({ events, totalDays }) => {
         })
       : "Monday",
   );
+  const [selectedEvent, setSelectedEvent] = useState(null);
 
   return (
-    <div className="flex w-full items-center justify-center font-netron">
+    <div className="relative flex w-full items-center justify-center font-netron">
       <div className="mx-10 grid w-fit grid-cols-1 items-center text-base md:text-xl">
         {totalDays.map((day) => (
           <button
             key={day}
-            className={`flex justify-center p-2 font-semibold text-rosehack-white focus:outline-none ${
+            className={`sticky flex justify-center p-2 font-semibold text-rosehack-white focus:outline-none ${
               selectedDay === day ? "text-xl md:text-3xl" : "bg-transparent"
             }`}
             onClick={() => setSelectedDay(day)}
@@ -33,10 +34,15 @@ const Events = ({ events, totalDays }) => {
           .map(({ start, summary, description, location }, index) => (
             <div
               key={index}
-              className="grid w-full grid-cols-2 items-center justify-center px-4 py-3 text-xs font-semibold text-rosehack-white md:w-9/12 md:text-lg"
+              onClick={() => setSelectedEvent(index)}
+              className={`grid w-full grid-cols-2 items-center justify-center border-t-4 px-4 py-3 text-xs font-semibold md:w-9/12 md:text-lg ${
+                selectedEvent === index
+                  ? "border-rosehack-darkgreen text-rosehack-darkgreen"
+                  : "border-rosehack-white text-rosehack-white"
+              }`}
             >
               <div>
-                <p className="flex w-full justify-start text-lg md:text-3xl">
+                <p className="flex w-full justify-start whitespace-normal text-lg md:text-3xl">
                   {summary}
                 </p>
                 <p className="flex justify-start opacity-70">
