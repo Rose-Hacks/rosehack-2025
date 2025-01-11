@@ -20,7 +20,7 @@ interface Attributes {
   gender: string;
   grade: string;
   shirt: string;
-  diet: string[];
+  diet: string;
 }
 
 interface Fields {
@@ -192,5 +192,5 @@ export const ATTRIBUTES: Attributes = {
   gender: "",
   grade: "",
   shirt: "",
-  diet: [],
+  diet: "",
 };
