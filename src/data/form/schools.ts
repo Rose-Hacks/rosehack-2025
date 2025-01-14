@@ -1136,6 +1136,7 @@ export const SCHOOLS: schools = [
   "Mountain View High School",
   "MSME TDC PPDC Agra",
   "Mt. San Antonio College",
+  "Mt. San Jacinto College",
   "Muhlenberg college",
   "Multi-Cultural Academy Charter School",
   "Murrell Dobbins Technical High School",
