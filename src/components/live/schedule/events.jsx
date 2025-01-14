@@ -50,7 +50,7 @@ const Events = ({ events, totalDays }) => {
                 <div key={index} className="flex flex-col items-center">
                   <div className="m-2 flex w-11/12">
                     <Image src={line} alt="line" />
-                    <div className="font-workSans m-2 grid w-full grid-cols-4 items-center justify-center rounded-xl bg-gradient-to-r from-rosehack-green to-rosehack-darkgreen px-4 py-3 text-lg font-semibold">
+                    <div className="font-workSans m-2 grid w-full grid-cols-4 items-center justify-center rounded-xl bg-gradient-to-r from-rosehack-green-300 to-rosehack-green-400 px-4 py-3 text-lg font-semibold">
                       <p className="flex justify-start">
                         <span className="rounded-xl bg-rosehack-green-200 p-2 py-1">
                           {new Date(start).toLocaleTimeString("en-US", {
