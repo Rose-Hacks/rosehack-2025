@@ -53,9 +53,15 @@ module.exports = {
         rosehack: {
           white: "#FDEFE8",
           green: "#7AB9B54D",
+          "green-100": "#A3BD84",
+          "green-200": "#BFD389",
+          "green-300": "#618065",
+          "green-400": "#30371D",
           darkgreen: "#4f7b80",
           "blue-100": "#68B5E1",
           "blue-200": "#4092CE",
+          "blue-300": "#5E98B9",
+          gray: "#D9D9D9",
         },
       },
       keyframes: {
