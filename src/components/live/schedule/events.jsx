@@ -56,12 +56,12 @@ const Events = ({ events, totalDays }) => {
         ))}
       </div>
       {events.filter(({ day }) => day === selectedDay).length > 0 ? (
-        <div className="relative my-10 mt-6 flex h-full w-9/12 flex-col gap-2 text-white duration-300">
+        <div className="relative my-10 mt-6 flex h-full w-11/12 flex-col gap-2 text-white duration-300 md:w-9/12">
           <div className="ml-3 grid w-11/12 grid-cols-4 text-center font-bold sm:text-sm md:text-2xl">
-            <span className="">Time</span>
-            <span className="">Event</span>
-            <span className="">Type</span>
-            <span className="">Location</span>
+            <span>Time</span>
+            <span>Event</span>
+            <span>Type</span>
+            <span>Location</span>
           </div>
           <Image
             src={cloud}
@@ -87,7 +87,7 @@ const Events = ({ events, totalDays }) => {
                         className="hidden md:block"
                       />
                       <div
-                        className={`font-workSans grid w-full grid-cols-4 items-center justify-center rounded-xl text-xs font-semibold md:m-2 md:px-4 md:py-3 md:text-lg ${
+                        className={`font-workSans grid w-full grid-cols-4 items-center justify-center rounded-xl px-2 py-3 text-xs font-semibold md:m-2 md:px-4 md:py-3 md:text-lg ${
                           selectedDay === currentDay &&
                           currentHour === eventHour
                             ? "bg-gradient-to-r from-rosehack-green-300 to-rosehack-green-400"
@@ -103,12 +103,12 @@ const Events = ({ events, totalDays }) => {
                             })}
                           </span>
                         </p>
-                        <p className="flex w-full justify-start">{summary}</p>
+                        <p>{summary}</p>
                         <p className="flex justify-center">
                           {description.split("\n")[0].substr(1)}
                         </p>
                         <p className="flex justify-center">
-                          <span className="rounded-full bg-rosehack-green-100 p-0 text-center md:p-3">
+                          <span className="rounded-3xl bg-rosehack-green-100 p-1.5 text-center md:rounded-full md:p-3">
                             {location}
                           </span>
                         </p>
