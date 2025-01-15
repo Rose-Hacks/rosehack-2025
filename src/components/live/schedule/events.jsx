@@ -42,7 +42,7 @@ const Events = ({ events, totalDays }) => {
 
   return (
     <div className="z-0 flex w-full flex-col items-center justify-center gap-10">
-      <div className="mx-auto grid w-10/12 grid-cols-7 items-center justify-between rounded-xl border-4 border-white bg-rosehack-blue-300 font-netron text-base md:text-2xl">
+      <div className="mx-auto grid w-10/12 grid-cols-7 items-center justify-between rounded-xl border-4 border-white bg-rosehack-blue-300 font-netron text-xs md:text-2xl">
         {totalDays.map((day) => (
           <button
             key={day}
