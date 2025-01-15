@@ -105,6 +105,10 @@ module.exports = {
             height: "0",
           },
         },
+        jiggle: {
+          "0%": { transform: "translate(0)" },
+          "50%": { transform: "translate(0px, 8px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -112,6 +116,7 @@ module.exports = {
         "caret-blink": "caret-blink 1.25s ease-out infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "jiggle-6s": "jiggle 6s ease-in-out infinite",
       },
     },
   },
