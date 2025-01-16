@@ -28,7 +28,7 @@ const Schedule = async () => {
   ];
 
   return (
-    <div className="relative flex w-full flex-col items-center gap-20">
+    <div className="relative flex w-full flex-col items-center gap-10 md:gap-20">
       <Title title="SCHEDULE" />
       <Events events={items} totalDays={totalDays} />
     </div>

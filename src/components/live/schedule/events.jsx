@@ -42,16 +42,17 @@ const Events = ({ events, totalDays }) => {
 
   return (
     <div className="z-0 flex w-full flex-col items-center justify-center gap-10">
-      <div className="mx-auto grid w-10/12 grid-cols-7 items-center justify-between rounded-xl border-4 border-white bg-rosehack-blue-300 font-netron text-xs md:text-2xl">
+      <div className="mx-auto grid w-10/12 grid-cols-7 items-center justify-between gap-2 rounded-xl border-4 border-white bg-rosehack-blue-300 font-netron text-xs md:text-xl">
         {totalDays.map((day) => (
           <button
             key={day}
             className={`flex justify-center rounded p-3 text-white duration-300 focus:outline-none ${
-              selectedDay === day ? "m-1 bg-rosehack-gray" : "bg-transparent"
+              selectedDay === day ? "bg-rosehack-gray" : "bg-transparent"
             }`}
             onClick={() => setSelectedDay(day)}
           >
-            {day}
+            <span className="hidden sm:block">{day}</span>
+            <span className="block sm:hidden">{day.slice(0, 3)}</span>
           </button>
         ))}
       </div>
@@ -126,7 +127,7 @@ const Events = ({ events, totalDays }) => {
           />
         </div>
       ) : (
-        <div className="text-center text-xl font-bold text-rosehack-white">
+        <div className="w-9/12 text-center text-xl font-bold text-rosehack-white md:w-full">
           No Events Today. <br /> Please select another day to view an event
         </div>
       )}
