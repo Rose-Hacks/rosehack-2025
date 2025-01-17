@@ -1,4 +1,3 @@
-import Evan from "@/public/board/evan.webp";
 import ArunPSingh from "@/public/board/arun_pratap singh.png";
 import ChagariVReddy from "@/public/board/Chagari_Vamsi Reddy.png";
 import PrachiKurani from "@/public/board/Prachit_Kurani.png";
