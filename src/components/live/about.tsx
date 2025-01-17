@@ -1,16 +1,16 @@
 import Image from "next/image";
-import aboutUs from "@/public/assets/aboutUs.svg";
+import trafficLight from "@/public/assets/trafficLight.svg";
 
 const About = () => {
   return (
-    <div className="relative -mt-[62%] mb-[20%] flex w-full flex-row items-center justify-center md:justify-between lg:-mt-[10%] lg:mb-10">
+    <div className="relative flex h-full w-full items-center justify-center sm:mt-[15%] md:h-screen md:justify-end lg:mb-10">
       <Image
-        src={aboutUs}
+        src={trafficLight}
         alt="Traffic Light Asset"
-        className="w-full xl:w-3/4"
+        className="absolute left-0 top-5 w-1/3 xl:w-1/2"
       />
 
-      <div className="absolute right-0 top-[10%] w-2/3 flex-col text-center text-rosehack-white lg:right-[5%] lg:top-[20%] lg:w-1/2 lg:text-left xl:flex 2xl:top-[25%]">
+      <div className="mt-20 w-2/3 flex-col text-center text-rosehack-white md:mt-32 lg:w-1/2 lg:text-left xl:flex">
         <div className="mb-2 font-netron text-3xl md:mb-10 md:text-6xl 2xl:text-8xl">
           ABOUT US
         </div>
