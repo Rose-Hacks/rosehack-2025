@@ -5,7 +5,7 @@ import { InstagramIcon, LinkedinIcon, MailIcon } from "lucide-react";
 
 const Content = () => {
   return (
-    <div className="flex w-11/12 flex-col items-center justify-center gap-2 md:w-2/5">
+    <div className="flex w-11/12 flex-col items-center justify-center gap-2 md:w-3/5 xl:w-2/5">
       <div className="flex w-full flex-col items-center justify-center gap-4 rounded-3xl border-4 border-rosehack-white/70 bg-rosehack-green/80 p-3 font-netron">
         <div className="whitespace-nowrap rounded-3xl px-7 text-center font-netron text-lg text-rosehack-white md:whitespace-normal md:text-3xl">
           ROSE HACK 2025
