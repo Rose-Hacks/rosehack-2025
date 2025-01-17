@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Content from "./landing/content";
-import Logo from "@/public/assets/landing/RHLogo.svg";
+import Logo from "@/public/assets/logo.svg";
 import city1 from "@/public/assets/landing/citybg1.svg";
 import city2 from "@/public/assets/landing/citybg2.svg";
-// import dome from "@/public/assets/landing/dome.svg";
 import clouds from "@/public/assets/landing/clouds.svg";
 import grass from "@/public/assets/landing/cityforeground.svg";
 import box from "@/public/assets/landing/box_tower.svg";
@@ -44,15 +43,10 @@ const Landing = () => {
           <Image
             src={city2}
             alt="clouds"
-            className="absolute -inset-x-12 z-0 md:-inset-y-24"
+            className="absolute -inset-x-12 z-0 w-screen md:-inset-y-24"
           />
-          <Image src={city1} alt="clouds" className="relative z-10" />
+          <Image src={city1} alt="clouds" className="relative z-10 w-screen" />
         </div>
-        {/* <Image
-          src={dome}
-          alt="dome"
-          className="-bottom-14 right-[5%] z-30 hidden w-1/6 md:absolute md:bottom-[10%] md:block md:w-1/3"
-        /> */}
         <div className="absolute -left-[5%] top-[47.5%] flex w-full md:top-[15%]">
           <Image
             src={box}
