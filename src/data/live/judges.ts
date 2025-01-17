@@ -1,15 +1,15 @@
 import Evan from "@/public/board/evan.webp";
-import ArunPSingh from "@/public/board/arun_pratap singh.png";
-import ChagariVReddy from "@/public/board/Chagari_Vamsi Reddy.png";
-import PrachiKurani from "@/public/board/Prachit_Kurani.png";
-import Preksha from "@/public/board/Preksha_Kothari.png";
-import Raidah from "@/public/board/Raidah_Fairooz.png";
-import Rishabh from "@/public/board/Rishabh_Thakur.png";
-import Shivani from "@/public/board/Shivali_Naik.png";
-import Sourabh from "@/public/board/sourabh_madur.png";
-import Vibhas from "@/public/board/Vibhas_Mohan Zanpure.png";
-import Ioana from "@/public/board/Ioana_Munteanu.png";
-import Rachit from "@/public/board/Rachit_Prajapati.png";
+import ArunPSingh from "@/public/board/webp singh.webp";
+import ChagariVReddy from "@/public/board/webp Reddy.webp";
+import PrachiKurani from "@/public/board/Prachit_Kurani.webp";
+import Preksha from "@/public/board/Preksha_Kothari.webp";
+import Raidah from "@/public/board/Raidah_Fairooz.webp";
+import Rishabh from "@/public/board/Rishabh_Thakur.webp";
+import Shivani from "@/public/board/Shivali_Naik.webp";
+import Sourabh from "@/public/board/sourabh_madur.webp";
+import Vibhas from "@/public/board/webp Zanpure.webp";
+import Ioana from "@/public/board/Ioana_Munteanu.webp";
+import Rachit from "@/public/board/Rachit_Prajapati.webp";
 
 export const JUDGES = [
   {
