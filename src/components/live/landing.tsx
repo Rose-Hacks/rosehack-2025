@@ -34,7 +34,7 @@ const Landing = () => {
       <Image
         src={foreground}
         alt="foreground"
-        className="absolute top-[65vh] z-20 w-full sm:top-12 lg:top-32"
+        className="absolute top-[65vh] z-20 w-full sm:top-12 md:top-[50vh] lg:top-32"
       />
     </div>
   );
