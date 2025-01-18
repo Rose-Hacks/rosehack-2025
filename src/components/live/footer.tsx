@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Clouds from "@/public/assets/Clouds.svg";
 import Hills from "@/public/assets/hill.svg";
-import LOGO from "@/public/assets/RoseHackLogo.png";
+import LOGO from "@/public/assets/logo.svg";
 import Windmill1 from "@/public/assets/farWindmill.svg";
 import Windmill2 from "@/public/assets/middleWindmill.svg";
 import Windmill3 from "@/public/assets/closeWindMill.svg";
@@ -10,7 +10,7 @@ import { Instagram, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className="bg-rosehack-100 relative mt-[20vh] flex h-full flex-col items-center justify-end md:h-screen">
+    <div className="bg-rosehack-100 relative mt-[35vh] flex h-full flex-col items-center justify-end md:h-screen">
       <div className="relative w-screen">
         <Image
           src={Clouds}
