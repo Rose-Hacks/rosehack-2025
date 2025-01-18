@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Events = ({ events, totalDays }) => {
   const [selectedDay, setSelectedDay] = useState(
-    new Date() > new Date(events[0].start)
+    new Date() > new Date(events[0]?.start)
       ? new Date().toLocaleString("en-US", {
           timeZone: "America/Los_Angeles",
           weekday: "long",
