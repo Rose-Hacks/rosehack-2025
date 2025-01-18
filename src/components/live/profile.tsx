@@ -10,12 +10,14 @@ const Profile = ({
   image: StaticImageData | string;
 }) => {
   return (
-    <div className="flex w-full flex-col gap-1 text-center text-white">
-      <div className="aspect-square w-full overflow-hidden rounded-full">
-        <Image src={image} alt={name} />
-      </div>
-      <p className="text-lg md:text-xl">{name}</p>
-      <p className="text-sm md:text-lg">{position}</p>
+    <div className="-center flex w-full flex-col items-center gap-1 text-center text-white">
+      <Image
+        src={image}
+        alt="Evan and his roommates"
+        className="h-full w-full rounded-full object-cover shadow-sm"
+      />
+      <p className="text-xl">{name}</p>
+      <p className="text-lg">{position}</p>
     </div>
   );
 };
