@@ -3,7 +3,7 @@ import TrackCard from "@/components/live/tracks/TrackCard";
 
 const Tracks = () => {
   return (
-    <div className="w-full bg-rosehack-blue-100">
+    <div className="mt-[130%] w-full bg-rosehack-blue-100 lg:mt-[15%]">
       <h1 className="mt-8 text-center font-netron text-3xl font-bold text-rosehack-white md:mt-12 md:text-6xl">
         Tracks
       </h1>
