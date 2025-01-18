@@ -1,12 +1,12 @@
-import ArunPSingh from "@/public/judges/arun_pratapsingh.png";
-import ChagariVReddy from "@/public/judges/Chagari_VamsiReddy.png";
+import ArunPSingh from "@/public/judges/arun_pratapsingh.webp";
+import ChagariVReddy from "@/public/judges/Chagari_VamsiReddy.webp";
 import PrachiKurani from "@/public/judges/Prachit_Kurani.webp";
 import Preksha from "@/public/judges/Preksha_Kothari.webp";
 import Raidah from "@/public/judges/Raidah_Fairooz.webp";
 import Rishabh from "@/public/judges/Rishabh_Thakur.webp";
 import Shivani from "@/public/judges/Shivali_Naik.webp";
 import Sourabh from "@/public/judges/sourabh_madur.webp";
-import Vibhas from "@/public/judges/Vibhas_MohanZanpure.png";
+import Vibhas from "@/public/judges/Vibhas_MohanZanpure.webp";
 import Ioana from "@/public/judges/Ioana_Munteanu.webp";
 import Rachit from "@/public/judges/Rachit_Prajapati.webp";
 
