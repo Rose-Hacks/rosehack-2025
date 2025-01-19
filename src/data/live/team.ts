@@ -90,7 +90,7 @@ export const TEAMS = [
     image: Harshini,
   },
   {
-    name: "Charlette Chopra",
+    name: "Charlette O'Connor",
     position: "Sponsorship",
     image: Charlette,
   },

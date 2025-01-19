@@ -4,7 +4,7 @@ import Profile from "./profile";
 
 const Judges = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-rosehack-blue-100">
+    <div className="flex flex-col items-center justify-center gap-10 bg-rosehack-blue-100">
       <Title title={"JUDGES"} />
       <div className="z-20 mt-2 flex w-full flex-wrap justify-center gap-10 md:w-3/5">
         {JUDGES.map((judge, index) => (
