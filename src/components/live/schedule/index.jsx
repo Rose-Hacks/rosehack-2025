@@ -1,3 +1,4 @@
+"use client";
 import { api } from "@/utils/api";
 import Events from "./events";
 import Title from "../title";
@@ -36,3 +37,5 @@ const Schedule = async () => {
 };
 
 export default Schedule;
+
+// export const dynamic = "force-dynamic";

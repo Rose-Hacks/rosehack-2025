@@ -1,4 +1,3 @@
-"use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import line from "@/public/assets/schedule/line.svg";
@@ -106,7 +105,8 @@ const Events = ({ events, totalDays }) => {
                         </p>
                         <p>{summary}</p>
                         <p className="flex justify-center">
-                          {description.split("\n")[0].substr(1)}
+                          {/* {description.split("\n")[0].substr(1)} */}
+                          {description}
                         </p>
                         <p className="flex justify-center">
                           <span className="rounded-3xl bg-rosehack-green-100 p-1.5 text-center md:rounded-full md:p-3">

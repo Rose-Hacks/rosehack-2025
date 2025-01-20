@@ -37,16 +37,6 @@ export const JUDGES = [
     image: Preksha,
   },
   {
-    name: "Rachit Prajapati",
-    title: "Graduate Student",
-    image: Rachit,
-  },
-  {
-    name: "Raidah Fairooz",
-    title: "Alumni",
-    image: Raidah,
-  },
-  {
     name: "Rishabh Thakur",
     title: "Senior Software Engineer at Nvidia",
     image: Rishabh,
@@ -65,5 +55,15 @@ export const JUDGES = [
     name: "Vibhas Mohan Zanpure",
     title: "Software Development Manager @ Amazon",
     image: Vibhas,
+  },
+  {
+    name: "Raidah Fairooz",
+    title: "Alumni",
+    image: Raidah,
+  },
+  {
+    name: "Rachit Prajapati",
+    title: "Graduate Student",
+    image: Rachit,
   },
 ];
