@@ -1,12 +1,10 @@
 import {
-  CheckboxInput,
   Description,
   RadioInput,
   TermsAndConditions,
   TextInput,
   UploadInput,
 } from "@/types/forms";
-import { DIETS } from "./information";
 import { GENDERS } from "./information";
 import { SHIRTS } from "./information";
 import data from "@/data/config";
@@ -17,7 +15,6 @@ interface Attributes {
   phone: string;
   gender: string;
   shirt: string;
-  diet: string[];
   affiliation: "Professor" | "Student" | "Industry";
   title: string;
   photo: string;
@@ -31,7 +28,6 @@ interface Fields {
   phone: TextInput;
   gender: RadioInput;
   shirt: RadioInput;
-  diet: CheckboxInput;
   affiliation: RadioInput;
   title: TextInput;
   photo: UploadInput;
@@ -123,16 +119,6 @@ export const FIELDS: Fields = {
     editable: true,
   },
 
-  diet: {
-    input: "checkboxes",
-    text: "Dietary Restrictions",
-    width: 12,
-    field: "diet",
-    options: DIETS,
-    required: false,
-    editable: true,
-  },
-
   affiliation: {
     input: "radio",
     text: "Affiliation",
@@ -190,7 +176,6 @@ export const ATTRIBUTES: Attributes = {
   phone: "",
   gender: "",
   shirt: "",
-  diet: [],
   affiliation: "Professor",
   title: "",
   photo: "",
