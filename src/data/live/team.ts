@@ -57,7 +57,7 @@ export const COMMITTEES = {
 
 export const DIRECTORS = [
   {
-    name: "Avidithi Kethidi",
+    name: "Advithi Kethidi",
     position: "Director",
     image: Avithi,
   },

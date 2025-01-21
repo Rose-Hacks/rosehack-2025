@@ -24,10 +24,10 @@ const Template = ({ children, name, preview }) => {
           <Container className="mx-auto my-[40px] max-w-[465px] rounded border border-solid border-[#eaeaea] bg-[#68B5E1] p-[20px] text-[#FDEFE8]">
             <Section className="mt-[32px]">
               <Img
-                src="https://rosehack.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FRoseHackLogo.7bb88e4d.png&w=384&q=75"
-                width="40"
-                height="37"
-                alt="Vercel"
+                src="https://6dspd0mrp6.ufs.sh/f/TnffYRuzjYPeDECVZiJYGbQHcsT1Z2BlRfhYxqJwmAriWUD5"
+                width="500"
+                height="100"
+                alt="Rosehack"
                 className="mx-auto my-0"
               />
             </Section>
