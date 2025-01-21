@@ -101,12 +101,12 @@ export const TEAMS = [
   },
   {
     name: "Sahithi Matta",
-    position: "Spornsorship",
+    position: "Sponsorship",
     image: sahithi,
   },
   {
     name: "Holland Pleskac",
-    position: "Sportsorship",
+    position: "Sponsorship",
     image: Holland,
   },
   {
