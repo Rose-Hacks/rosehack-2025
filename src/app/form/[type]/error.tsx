@@ -6,7 +6,7 @@ const InternalError = () => {
     <div className="font-poppins flex w-full flex-col items-center justify-center gap-4 text-xl font-semibold text-white lg:text-3xl">
       <Image src={LOGO} alt="Rosehack Logo" />
       <div className="w-5/6 text-center">
-        We&#39;re sorry something unexpected happened
+        We are sorry something unexpected happened
       </div>
       <div className="w-5/6 text-center">Please reload the page</div>
     </div>
