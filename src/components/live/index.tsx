@@ -8,6 +8,7 @@ import Team from "./team";
 import Judges from "./judges";
 import FAQ from "./faq";
 import Footer from "./footer";
+import Speaker from "./speaker";
 
 const Live = () => {
   return (
@@ -16,6 +17,7 @@ const Live = () => {
       <About />
       <Tracks />
       <Schedule />
+      <Speaker />
       <Sponsors />
       <Team />
       {/* <Committees /> */}
