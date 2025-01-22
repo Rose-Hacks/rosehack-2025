@@ -32,7 +32,9 @@ const Timer = () => {
   return (
     <div className="flex h-full flex-col py-4">
       <div className="mb-4 flex gap-3">
-        <Label className="pr-5 text-2xl font-bold">Timer</Label>
+        <Label className="pr-5 text-2xl font-bold text-rosehack-white">
+          Timer
+        </Label>
 
         <Button onClick={addTimer}>+ add timer</Button>
         <Button variant="destructive" onClick={clearAll}>

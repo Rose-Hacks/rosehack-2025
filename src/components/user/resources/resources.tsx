@@ -10,7 +10,9 @@ const Resources = () => {
 
   return (
     <>
-      <Label className="pr-5 text-2xl font-bold">Hackpacks</Label>
+      <Label className="pr-5 text-2xl font-bold text-rosehack-white">
+        Hackpacks
+      </Label>
       <Toolbar data={HACKPACKS} setSearch={setSearch} />
       <div className="mt-8 grid grid-cols-4 gap-4">
         {search.map(({ text, techs, link, description }, index) => (

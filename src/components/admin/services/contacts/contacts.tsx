@@ -23,7 +23,9 @@ const Contacts = () => {
 
   return (
     <div className="flex h-full flex-col gap-3 py-4">
-      <Label className="pr-5 text-2xl font-bold">Contacts</Label>
+      <Label className="pr-5 text-2xl font-bold text-rosehack-white">
+        Contacts
+      </Label>
 
       <div className="grid w-full grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-3">
         {contacts.map((role, index) => (

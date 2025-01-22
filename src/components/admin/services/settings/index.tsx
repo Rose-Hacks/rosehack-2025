@@ -17,9 +17,13 @@ const Settings = () => {
 
   return (
     <div className="flex h-full flex-col py-4">
-      <Label className="pr-5 text-2xl font-bold">Settings</Label>
+      <Label className="pr-5 text-2xl font-bold text-rosehack-white">
+        Settings
+      </Label>
 
-      <Button onClick={syncStatsWithDatabase}>Sync Stats</Button>
+      <Button className="mx-auto w-5/12" onClick={syncStatsWithDatabase}>
+        Sync Stats
+      </Button>
     </div>
   );
 };

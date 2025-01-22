@@ -42,7 +42,7 @@ const Navigation = () => {
 
   return (
     <>
-      <div className="fixed z-20 flex h-12 w-full items-center bg-hackathon-blue-200 lg:hidden">
+      <div className="fixed z-20 flex h-12 w-full items-center bg-rosehack-darkgreen lg:hidden">
         <div
           className="flex items-center hover:cursor-pointer"
           onClick={() => setExpand(!expand)}
@@ -62,7 +62,7 @@ const Navigation = () => {
           expand ? "fixed left-0 h-screen w-1/2 pt-5" : `hidden`
         }`}
       >
-        <div className="grid h-full w-full grid-cols-1 grid-rows-10 flex-col place-items-center bg-hackathon-blue-200">
+        <div className="grid h-full w-full grid-cols-1 grid-rows-10 flex-col place-items-center bg-rosehack-blue-200">
           <div className="items-center lg:flex">
             <Image src={LOGO} className="h-10 w-10" alt={`${data.name} Logo`} />
           </div>
@@ -73,7 +73,7 @@ const Navigation = () => {
           >
             {Object.entries(tabs).map(([title, subTabs], index) => (
               <AccordionItem key={index} value={title} className="border-none">
-                <AccordionTrigger className="px-3 py-0 text-xl font-bold text-white opacity-100 transition-opacity hover:cursor-pointer hover:no-underline hover:opacity-40">
+                <AccordionTrigger className="px-3 py-0 text-xl font-bold text-rosehack-white opacity-100 transition-opacity hover:cursor-pointer hover:no-underline hover:opacity-40">
                   {title}
                 </AccordionTrigger>
                 <AccordionContent>
@@ -86,10 +86,10 @@ const Navigation = () => {
                       >
                         <div
                           onClick={() => setExpand(false)}
-                          className={`flex w-full items-center justify-start py-1 pl-[10%] [&>*]:text-white ${
+                          className={`flex w-full items-center justify-start py-1 pl-[10%] [&>*]:text-rosehack-white ${
                             pathName.endsWith(tab.link)
-                              ? "bg-hackathon-blue-100"
-                              : "hover:bg-hackathon-blue-100"
+                              ? "bg-rosehack-blue-100"
+                              : "hover:bg-rosehack-blue-100 hover:text-rosehack-white"
                           }`}
                         >
                           {tab.icon}
@@ -112,8 +112,8 @@ const Navigation = () => {
                 <div
                   className={`flex w-full items-center justify-center py-1 [&>*]:text-white ${
                     pathName.endsWith(tab.link)
-                      ? "bg-hackathon-blue-100"
-                      : "[&>*]:hover:text-hackathon-blue-100"
+                      ? "bg-rosehack-blue-100"
+                      : "[&>*]:hover:text-rosehack-blue-100"
                   }`}
                 >
                   {tab.icon}
@@ -122,7 +122,7 @@ const Navigation = () => {
             ))}
             <div
               onClick={() => signOut({ callbackUrl: "/", redirect: true })}
-              className="flex w-full items-center justify-center py-1 text-white hover:cursor-pointer hover:text-hackathon-blue-100"
+              className="flex w-full items-center justify-center py-1 text-rosehack-white hover:cursor-pointer hover:text-rosehack-blue-100"
             >
               <LogIn className="mr-2" />
             </div>
