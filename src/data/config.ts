@@ -28,7 +28,7 @@ const data: config = {
   domain: "https://www.rosehack.com/",
   instagram: "https://www.instagram.com/rosehackucr/",
   linkedin: "https://www.linkedin.com/company/33212536",
-  discord: "https://www.discord.com",
+  discord: "https://discord.gg/XdWywMsDw9",
   heart: "🤎",
 };
 

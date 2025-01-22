@@ -35,7 +35,7 @@ export const QUESTIONS: QuestionAnswer[] = [
   },
   {
     question: "Will food be provided? Will it be free or do I have to pay?",
-    answer: "Food will be proviided and will be paid and provided for.",
+    answer: "Food will be provided and will free.",
   },
   {
     question: "Are there prizes?",
