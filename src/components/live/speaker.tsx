@@ -9,7 +9,7 @@ const Speaker = () => {
       <div className="flex w-full flex-col items-center justify-center gap-2 p-3 md:w-4/5 md:flex-row md:gap-10">
         <Image
           src={keynote}
-          alt="Keynote"
+          alt="Keynote Speaker"
           className="w-1/2 rounded-full object-cover md:w-1/3"
         />
         <div className="flex flex-col justify-start gap-3">
