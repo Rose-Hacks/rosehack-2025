@@ -4,13 +4,11 @@ import line from "@/public/assets/schedule/line.svg";
 import cloud from "@/public/assets/schedule/clouds.svg";
 
 const Events = ({ events, totalDays }) => {
-  const [selectedDay, setSelectedDay] = useState(
-    new Date() > new Date(events[0]?.start)
-      ? new Date().toLocaleString("en-US", {
-          timeZone: "America/Los_Angeles",
-          weekday: "long",
-        })
-      : "Monday",
+  const [selectedDay, setSelectedDay] = useState(() =>
+    new Date().toLocaleString("en-US", {
+      timeZone: "America/Los_Angeles",
+      weekday: "long",
+    }),
   );
 
   const [currentHour, setCurrentHour] = useState(
