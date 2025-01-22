@@ -1,4 +1,4 @@
-import keynote from "@/public/board/yonaphoto.png";
+import keynote from "@/public/board/yonaphoto.webp";
 import Title from "./title";
 import Image from "next/image";
 
