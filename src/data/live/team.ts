@@ -16,6 +16,7 @@ import mahiyat from "@/public/board/Mahiyat.webp";
 import minnoli from "@/public/board/Minnoli1.webp";
 import sahithi from "@/public/board/Sahithi.webp";
 import wasim from "@/public/board/wasim.webp";
+import howard from "@/public/board/howard.png";
 
 export const COMMITTEES = {
   Operations: [
@@ -148,6 +149,11 @@ export const TEAMS = [
     name: "Nidheesh Vakharia",
     position: "Software Engineering",
     image: Nidheesh,
+  },
+  {
+    name: "Howard Zhu",
+    position: "Infrastructure Engineering",
+    image: howard,
   },
 ];
 
