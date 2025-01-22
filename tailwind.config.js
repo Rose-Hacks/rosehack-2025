@@ -52,7 +52,7 @@ module.exports = {
         },
         rosehack: {
           white: "#FDEFE8",
-          green: "#7AB9B54D",
+          green: "#7AB9B5",
           "green-100": "#A3BD84",
           "green-200": "#BFD389",
           "green-300": "#618065",
@@ -62,63 +62,78 @@ module.exports = {
           "blue-200": "#4092CE",
           "blue-300": "#5E98B9",
           gray: "#D9D9D9",
-        },
-      },
-      keyframes: {
-        "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
-        },
-        "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
+          sidebar: {
+            DEFAULT: "#22577A",
+            foreground: "#F5F5F5",
+            primary: "#38A3A5",
+            "primary-foreground": "#F5F5F5",
+            accent: "#FFCF55",
+            "accent-foreground": "#22577A",
+            border: "#E7E7E7",
+            ring: "#FFCF55",
+            "primary-foreground": "#F5F5F5",
+            "accent-foreground": "#22577A",
           },
         },
-        "caret-blink": {
-          "0%,70%,100%": {
-            opacity: "1",
+        keyframes: {
+          "accordion-down": {
+            from: {
+              height: "0",
+            },
+            to: {
+              height: "var(--radix-accordion-content-height)",
+            },
           },
-          "20%,50%": {
-            opacity: "0",
+          "accordion-up": {
+            from: {
+              height: "var(--radix-accordion-content-height)",
+            },
+            to: {
+              height: "0",
+            },
+          },
+          "caret-blink": {
+            "0%,70%,100%": {
+              opacity: "1",
+            },
+            "20%,50%": {
+              opacity: "0",
+            },
+          },
+          "accordion-down": {
+            from: {
+              height: "0",
+            },
+            to: {
+              height: "var(--radix-accordion-content-height)",
+            },
+          },
+          "accordion-up": {
+            from: {
+              height: "var(--radix-accordion-content-height)",
+            },
+            to: {
+              height: "0",
+            },
+          },
+          jiggle: {
+            "0%": { transform: "translate(0)" },
+            "50%": { transform: "translate(0px, 8px)" },
           },
         },
-        "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+        animation: {
+          "accordion-down": "accordion-down 0.2s ease-out",
+          "accordion-up": "accordion-up 0.2s ease-out",
+          "caret-blink": "caret-blink 1.25s ease-out infinite",
+          "accordion-down": "accordion-down 0.2s ease-out",
+          "accordion-up": "accordion-up 0.2s ease-out",
+          "jiggle-6s": "jiggle 6s ease-in-out infinite",
         },
-        "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
-        },
-        jiggle: {
-          "0%": { transform: "translate(0)" },
-          "50%": { transform: "translate(0px, 8px)" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        "caret-blink": "caret-blink 1.25s ease-out infinite",
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        "jiggle-6s": "jiggle 6s ease-in-out infinite",
       },
     },
+    plugins: [
+      require("tailwindcss-animate"),
+      require("@tailwindcss/typography"),
+    ],
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 };

@@ -14,10 +14,10 @@ const Timer = () => {
 
   const addTimer = () => {
     setTimers([
-      ...timers,
       {
         id: uuidv4(),
       },
+      ...timers,
     ]);
   };
 
@@ -30,18 +30,18 @@ const Timer = () => {
   };
 
   return (
-    <div className="flex h-full flex-col py-4">
+    <div className="font-poppins flex h-full flex-col py-4">
       <div className="mb-4 flex gap-3">
         <Label className="pr-5 text-2xl font-bold">Timer</Label>
 
-        <Button onClick={addTimer}>+ add timer</Button>
+        <Button onClick={addTimer}>Add Timer</Button>
         <Button variant="destructive" onClick={clearAll}>
           clear all
         </Button>
       </div>
-      <div className="flex h-full flex-col overflow-y-scroll rounded-3xl bg-gray-200 p-4">
+      <div className="flex h-full flex-col overflow-y-scroll p-4">
         {timers.length === 0 ? (
-          <div className="flex h-full items-center justify-center text-2xl font-bold opacity-30">
+          <div className="flex h-full items-center justify-center text-2xl font-bold">
             No Timers
           </div>
         ) : (

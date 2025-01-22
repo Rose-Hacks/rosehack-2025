@@ -38,7 +38,10 @@ const View = ({ title, src }) => {
         </DialogContent>
       </Dialog>
 
-      <Badge onClick={() => setModal({ src, title, visible: true })}>
+      <Badge
+        className="text-black hover:cursor-pointer"
+        onClick={() => setModal({ src, title, visible: true })}
+      >
         view
       </Badge>
 

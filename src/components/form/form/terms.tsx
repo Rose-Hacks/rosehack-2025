@@ -1,5 +1,5 @@
 import Checkbox from "@/components/checkbox";
-
+import { useState } from "react";
 type props = {
   options: string[];
   toggle: boolean;
@@ -7,6 +7,13 @@ type props = {
 };
 
 const Terms = ({ options, toggle, onClick }: props) => {
+  const [checkedState, setChecked] = useState(toggle);
+
+  const onClickWithCheckBox = () => {
+    onClick();
+    setChecked(!checkedState);
+  };
+
   return (
     <>
       <p className="mb-1 mt-3 font-semibold">
@@ -19,7 +26,7 @@ const Terms = ({ options, toggle, onClick }: props) => {
         ))}
       </ul>
 
-      <Checkbox id="terms" checked={toggle} onClick={onClick}>
+      <Checkbox id="terms" checked={checkedState} onClick={onClickWithCheckBox}>
         By selecting this I agree to all of the above terms
       </Checkbox>
     </>

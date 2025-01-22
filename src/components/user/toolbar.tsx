@@ -1,4 +1,6 @@
+"use client";
 import { InputWithClear } from "@/components/ui/input";
+import React, { useState } from "react";
 
 interface props {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -8,15 +10,24 @@ interface props {
 }
 
 const Toolbar = ({ data, setSearch }: props) => {
+  const [inputValue, setInputValue] = useState("");
   const onChange = (value: string) => {
-    const filter = data.filter(
-      ({ text, techs }) =>
-        text.toLowerCase().includes(value.toLowerCase()) ||
-        techs.some((tech: string) =>
-          tech.toLowerCase().includes(value.toLowerCase()),
-        ),
-    );
-    setSearch(filter);
+    setInputValue(value);
+    console.log(value);
+
+    if (value === "") {
+      setSearch(data);
+    } else {
+      const filter = data.filter(
+        ({ title, languages }) =>
+          title.toLowerCase().includes(value.toLowerCase()) ||
+          languages.some((language: string) =>
+            language.toLowerCase().includes(value.toLowerCase()),
+          ),
+      );
+      console.log(filter);
+      setSearch(filter);
+    }
   };
 
   return (
@@ -24,6 +35,7 @@ const Toolbar = ({ data, setSearch }: props) => {
       id="search"
       placeholder="Search"
       onClear={() => onChange("")}
+      value={inputValue}
       onChange={(e) => onChange(e.target.value)}
       maxLength={100}
     />
