@@ -107,7 +107,7 @@ const Events = ({ events, totalDays }) => {
                           {description}
                         </p>
                         <p className="flex justify-center">
-                          <span className="rounded-3xl bg-rosehack-green-100 p-1.5 text-center md:rounded-full md:p-3">
+                          <span className="rounded-xl bg-rosehack-green-200 p-1.5 text-center md:p-3">
                             {location}
                           </span>
                         </p>
