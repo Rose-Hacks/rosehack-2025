@@ -15,12 +15,14 @@ const Statistics = () => {
 
   return (
     <div className="flex h-full flex-col py-4">
-      <Label className="pr-5 text-2xl font-bold">Statistics</Label>
+      <Label className="pr-5 text-2xl font-bold text-rosehack-white">
+        Statistics
+      </Label>
       {!counts ? (
         <Loading />
       ) : (
         <div className="mt-4">
-          <Label className="hidden pl-5 text-xl font-bold lg:block">
+          <Label className="hidden pl-5 text-xl font-bold text-rosehack-white lg:block">
             Registrations
           </Label>
           <Tabs events={counts.events} />

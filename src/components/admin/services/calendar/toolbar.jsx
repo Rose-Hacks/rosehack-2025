@@ -32,7 +32,7 @@ const CustomToolbar = ({ onView, onNavigate, date, setTag }) => {
             onClick={() => onNavigate("PREV")}
             className="mx-2 hover:cursor-pointer"
           />
-          <p className="mb-0 text-3xl font-semibold">
+          <p className="mb-0 text-3xl font-semibold text-rosehack-white">
             {date.toLocaleString("default", { month: "short" })}{" "}
             {date.getFullYear()}
           </p>

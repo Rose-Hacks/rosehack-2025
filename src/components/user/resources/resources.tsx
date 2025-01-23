@@ -9,12 +9,11 @@ const Resources = () => {
   const [search, setSearch] = useState(HACKPACKS);
 
   return (
-    <div className="flex h-full flex-col gap-3 py-4">
-      <div className="sticky top-0 z-20">
-        <Label className="pr-5 text-2xl font-bold">Hackpacks</Label>
-        <Toolbar data={HACKPACKS} setSearch={setSearch} />
-      </div>
-
+    <>
+      <Label className="pr-5 text-2xl font-bold text-rosehack-white">
+        Hackpacks
+      </Label>
+      <Toolbar data={HACKPACKS} setSearch={setSearch} />
       <div className="mt-8 grid grid-cols-4 gap-4">
         {search.map(({ title, languages, link, description }, index) => (
           <Hackpack
@@ -26,7 +25,7 @@ const Resources = () => {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

@@ -12,7 +12,9 @@ const Judging = () => {
 
   return (
     <div className="flex h-full flex-col gap-3 py-4">
-      <Label className="pr-5 text-2xl font-bold">Judging</Label>
+      <Label className="pr-5 text-2xl font-bold text-rosehack-white">
+        Judging
+      </Label>
       <Toolbar
         data={teams}
         setData={setTeams}
