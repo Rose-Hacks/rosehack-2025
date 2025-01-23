@@ -64,7 +64,7 @@ const Events = ({ events, totalDays }) => {
           <Image
             src={cloud}
             alt="Cloud"
-            className="absolute -left-[20%] -top-4 -z-10 hidden animate-jiggle-6s md:block"
+            className="animate-jiggle-6s absolute -left-[20%] -top-4 -z-10 hidden md:block"
           />
           {/* {console.log(events)} */}
           <div className="z-20 w-full divide-y-4 rounded-xl border-4 border-white p-2">
@@ -121,7 +121,7 @@ const Events = ({ events, totalDays }) => {
           <Image
             src={cloud}
             alt="Cloud"
-            className="absolute -bottom-10 -right-[20%] -z-20 hidden animate-jiggle-6s md:block"
+            className="animate-jiggle-6s absolute -bottom-10 -right-[20%] -z-20 hidden md:block"
           />
         </div>
       ) : (

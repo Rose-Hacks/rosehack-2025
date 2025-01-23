@@ -30,8 +30,9 @@ const CalendarModal = ({ event, setEvent }) => {
               minute: "2-digit",
             })}
           </div>
+
           <div>
-            <Badge>{event.category}</Badge>
+            <Badge> {event.category}</Badge>
           </div>
         </div>
         <div className="my-2 flex items-center">

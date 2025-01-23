@@ -9,26 +9,15 @@ import {
 } from "@/components/ui/input-otp";
 
 const Timer = ({ onRemove }) => {
-  const [edit, setEdit] = useState(false);
+  const [edit, setEdit] = useState(true);
   const [play, setPlay] = useState(false);
   const [total, setTotal] = useState(60000);
   const [original, setOriginal] = useState(0);
-  const [time, setTime] = useState({
-    hours: "00",
-    minutes: "01",
-    seconds: "00",
-  });
 
   const onChange = (value) => {
     if (!edit) return;
 
     const [hours, minutes, seconds] = value.match(/.{2}/g);
-
-    setTime({
-      hours,
-      minutes,
-      seconds,
-    });
 
     setTotal(
       parseInt(hours) * (1000 * 60 * 60) +
@@ -40,31 +29,27 @@ const Timer = ({ onRemove }) => {
   useEffect(() => {
     const id = setInterval(() => {
       if (!play) return;
-
-      const newSeconds = total - 1000;
-
       setTotal((prev) => prev - 1000);
-
-      setTime({
-        hours: Math.floor((newSeconds / (1000 * 60 * 60)) % 24)
-          .toString()
-          .padStart(2, "0"),
-        minutes: Math.floor((newSeconds / 1000 / 60) % 60)
-          .toString()
-          .padStart(2, "0"),
-        seconds: Math.floor((newSeconds / 1000) % 60)
-          .toString()
-          .padStart(2, "0"),
-      });
-
       setOriginal((prev) => prev + 1000);
     }, 1000);
 
     return () => clearInterval(id);
   }, [play, total]);
 
+  const hours = Math.max(Math.floor((total / (1000 * 60 * 60)) % 24), 0)
+    .toString()
+    .padStart(2, "0");
+
+  const minutes = Math.max(Math.floor((total / 1000 / 60) % 60), 0)
+    .toString()
+    .padStart(2, "0");
+
+  const seconds = Math.max(Math.floor((total / 1000) % 60), 0)
+    .toString()
+    .padStart(2, "0");
+
   return (
-    <div className="mb-4 flex scroll-m-4 flex-col items-center justify-between rounded-xl bg-white p-4">
+    <div className="mb-4 flex scroll-m-4 flex-col items-center justify-between rounded-md bg-white p-4">
       <div className="flex w-full items-center justify-between">
         <input
           disabled={!edit}
@@ -78,7 +63,7 @@ const Timer = ({ onRemove }) => {
         disabled={!edit}
         maxLength={6}
         onChange={onChange}
-        value={time["hours"] + time["minutes"] + time["seconds"]}
+        value={hours + minutes + seconds}
         className="mt-4"
       >
         <InputOTPGroup>
@@ -96,8 +81,18 @@ const Timer = ({ onRemove }) => {
       </InputOTP>
 
       <div className="mt-4">
-        {play && !edit && <Pause onClick={() => setPlay(false)} />}
-        {!play && !edit && <Play onClick={() => setPlay(true)} />}
+        {play && (
+          <Pause
+            onClick={() => !edit && setPlay(false)}
+            className="hover:cursor-pointer"
+          />
+        )}
+        {!play && (
+          <Play
+            onClick={() => !edit && setPlay(true)}
+            className="hover:cursor-pointer"
+          />
+        )}
       </div>
 
       <Progress

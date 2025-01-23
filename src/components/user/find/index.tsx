@@ -4,53 +4,45 @@ import { Label } from "@/components/ui/label";
 import Toolbar from "../toolbar";
 import Idea from "./idea";
 import { useVirtualizer } from "@tanstack/react-virtual";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { api } from "@/utils/api";
 
-const ideas = [
-  {
-    text: "Very Cool Project Idea",
-    techs: ["Web Development Stack"],
-    description: "We are cooked!",
-    contact: "webdiv",
-  },
-  {
-    text: "Very Cool Project Idea",
-    techs: ["Web Development Stack"],
-    description: "We are cooked!",
-    contact: "webdiv",
-  },
-  {
-    text: "Very Cool Project Idea",
-    techs: ["Web Development Stack"],
-    description: "We are cooked!",
-    contact: "webdiv",
-  },
-  {
-    text: "Very Cool Project Idea",
-    techs: ["Web Development Stack"],
-    description: "We are cooked!",
-    contact: "webdiv",
-  },
-];
+interface idea {
+  title: string;
+  languages: string[];
+  details: string;
+  contact: string;
+}
 
 const Find = () => {
   const ref = useRef(null);
+  const [ideas, setIdeas] = useState<idea[]>([]);
+  const [search, setSearch] = useState<idea[]>([]);
+
+  useEffect(() => {
+    const getIdeas = async () => {
+      const { items } = await api({
+        url: "/api/dashboard/ideas",
+        method: "GET",
+      });
+      setIdeas(items);
+      setSearch(items);
+    };
+
+    getIdeas();
+  }, []);
 
   const { measureElement, getVirtualItems } = useVirtualizer({
-    count: ideas.length,
+    count: search.length,
     getScrollElement: () => ref.current,
-    estimateSize: () => 325,
+    estimateSize: () => 100,
     measureElement: (el) => {
-      if (el.clientHeight > 325) return el.clientHeight;
-      return 325;
+      if (el.clientHeight > 100) return el.clientHeight;
+      return 100;
     },
     lanes: 4,
     overscan: 4,
   });
-
-  const [search, setSearch] = useState(ideas);
-
-  console.log(search);
 
   return (
     <div className="flex h-[calc(100vh-48px)] w-full flex-col">
@@ -60,16 +52,16 @@ const Find = () => {
         </Label>
       </div>
       <Toolbar data={ideas} setSearch={setSearch} />
-      <div className="relative h-full overflow-y-scroll">
-        {ideas.length === 0 ? (
+      <div ref={ref} className="relative h-full overflow-y-scroll">
+        {search.length === 0 ? (
           <div className="flex h-full items-center justify-center">
             No Teams Available
           </div>
         ) : (
-          <div ref={ref}>
+          <div>
             {getVirtualItems().map(({ index, size, start }) => {
               if (index % 4) return null;
-              const row = ideas.slice(index, index + 4);
+              const row = search.slice(index, index + 4);
               return (
                 <div
                   key={`row: ${Math.floor(index / 4)}`}
@@ -79,7 +71,7 @@ const Find = () => {
                     transform: `translateY(${start}px)`,
                   }}
                 >
-                  {row.map(({ text, techs, description, contact }, i) => (
+                  {row.map(({ title, languages, details, contact }, i) => (
                     <div
                       key={`column: ${i}`}
                       ref={measureElement}
@@ -87,9 +79,9 @@ const Find = () => {
                       className="flex items-start p-2"
                     >
                       <Idea
-                        text={text}
-                        techs={techs}
-                        description={description}
+                        title={title}
+                        languages={languages}
+                        description={details}
                         contact={contact}
                       />
                     </div>

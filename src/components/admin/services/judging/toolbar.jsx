@@ -280,7 +280,9 @@ const Toolbar = ({
 
         <div className="flex flex-row justify-center">
           {tags.map((tag, index) => (
-            <Badge key={index}>{tag}</Badge>
+            <Badge type={tag} key={index}>
+              {tag}
+            </Badge>
           ))}
         </div>
       </form>
