@@ -98,7 +98,7 @@ const CheckIn = () => {
           )}
           <Scanner setResult={setResult} />
         </div>
-        <div>{code && code.split("&")[2]}</div>
+        <div className="text-white">{code && code.split("&")[2]}</div>
         <Button className="w-fit" onClick={handleCheckIn}>
           Check In
         </Button>

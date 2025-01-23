@@ -1,6 +1,30 @@
 import data from "../config";
 
-export const LANGUAGES = ["Arduino", "Next.js", "PyTorch", "Unity"];
+export const LANGUAGES = [
+  "React.js",
+  "Javascript",
+  "Typescript",
+  "HTML/CSS",
+  "TailwindCSS",
+  "Firebase",
+  "MongoDB",
+  "Python",
+  "Pandas",
+  "Jupyter",
+  "Flask",
+  "PyTorch",
+  "TensorFlow",
+  "Unity",
+  "C#",
+  "Arduino",
+  "C++",
+  "Raspberry Pi",
+  "Figma",
+  "iOS",
+  "Android",
+  "Flutter",
+  "React Native",
+];
 
 export const FIELDS = {
   description: {

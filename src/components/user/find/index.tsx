@@ -47,7 +47,7 @@ const Find = () => {
   return (
     <div className="flex h-[calc(100vh-48px)] w-full flex-col">
       <div className="pb-3 pt-4">
-        <Label className="pr-5 text-2xl font-bold">Team</Label>
+        <Label className="pr-5 text-2xl font-bold">Find a Team</Label>
       </div>
       <Toolbar data={ideas} setSearch={setSearch} />
       <div ref={ref} className="relative h-full overflow-y-scroll">
