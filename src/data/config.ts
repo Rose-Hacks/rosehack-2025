@@ -24,7 +24,7 @@ const data: config = {
   date: new Date("2025-01-25T09:00:00"),
   end: new Date("2025-01-26T09:00:00"),
   packet: "",
-  devpost: "https://devpost.com/",
+  devpost: "https://rosehack2025.devpost.com/",
   domain: "https://www.rosehack.com/",
   instagram: "https://www.instagram.com/rosehackucr/",
   linkedin: "https://www.linkedin.com/company/33212536",
