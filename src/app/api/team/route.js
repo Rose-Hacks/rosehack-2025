@@ -93,7 +93,7 @@ export const GET = async (req) => {
     );
   }
 
-  const team = req.nextUrl.searchParams.get("teamid");
+  const team = req.nextUrl.searchParams.get("team");
 
   try {
     const snapshot = await getDoc(doc(db, "teams", team));

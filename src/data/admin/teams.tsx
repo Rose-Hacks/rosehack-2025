@@ -7,7 +7,7 @@ import { Tags } from "@/types/dashboard";
 
 type Team = {
   name: string;
-  teamid: string;
+  team: string;
   members: string[];
   discords: string[];
   links: {
@@ -42,12 +42,12 @@ export const COLUMNS: (ColumnDef<Team, string | string[]> & {
     ),
   },
   {
-    accessorKey: "teamid",
+    accessorKey: "team",
     header: "Team ID",
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,
-    cell: (props: CellContext<Team, Team["teamid"]>) => (
+    cell: (props: CellContext<Team, Team["team"]>) => (
       <div>{props.getValue()}</div>
     ),
   },
