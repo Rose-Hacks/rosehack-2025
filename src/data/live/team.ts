@@ -95,7 +95,7 @@ export const TEAMS = [
     image: Charlette,
   },
   {
-    name: "Bhuvana Ramkumar",
+    name: "Bhuvana Kotha",
     position: "Sponsorship",
     image: bhuvana,
   },
