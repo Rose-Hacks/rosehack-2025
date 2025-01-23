@@ -12,7 +12,7 @@ const Profile = ({
   return (
     <div className="flex w-full flex-col gap-0 text-center text-white">
       <div className="aspect-square w-full overflow-hidden rounded-full">
-        <Image src={image} alt={name} />
+        <Image src={image} alt={name} width={400} />
       </div>
       <p className="mt-3 text-lg md:text-xl">{name}</p>
       <p className="text-sm md:text-lg">{position}</p>
