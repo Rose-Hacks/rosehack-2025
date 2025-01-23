@@ -31,7 +31,7 @@ const Navigation = () => {
   const tabs = TABS[pathName.split("/")[1]];
 
   return (
-    <Sidebar className="text-white bg-rosehack-blue-200">
+    <Sidebar className="bg-rosehack-blue-200 text-white">
       <SidebarHeader className="py-8">
         <Image
           src={LOGO}
