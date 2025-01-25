@@ -205,7 +205,7 @@ export const TABS: Tabs = {
         },
         {
           name: "Find a Team",
-          link: "/form/find",
+          link: "/form/idea",
           icon: <Search className={iconStyle} />,
         },
       ],
