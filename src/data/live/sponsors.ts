@@ -4,10 +4,10 @@ import BALSAMIQ from "@/public/assets/sponsors/balsamiq.svg";
 import TRIAD from "@/public/assets/sponsors/triad.svg";
 import GLICO from "@/public/assets/sponsors/glico.svg";
 import STANDOUTSTICKERS from "@/public/assets/sponsors/standout-stickers.svg";
-import NORDVPN from "@/public/assets/sponsors/nordvpn.png";
+import NORDVPN from "@/public/assets/sponsors/nordvpn.webp";
 import INCOGNI from "@/public/assets/sponsors/incogni.svg";
 import SAILY from "@/public/assets/sponsors/Saily.webp";
-import NORDPASS from "@/public/assets/sponsors/nordpass.png";
+import NORDPASS from "@/public/assets/sponsors/nordpass.webp";
 
 const SPONSORS = [
   { name: "WinC", image: WINC, link: "https://winc.cs.ucr.edu/" },
