@@ -63,7 +63,7 @@ const Table = ({ data }) => {
                     </div>
                     {group.table && (
                       <p className="mb-0 whitespace-nowrap font-semibold text-hackathon-green-300">
-                        table {group.table}
+                        Table {group.table}
                       </p>
                     )}
                   </div>
