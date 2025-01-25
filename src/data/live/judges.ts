@@ -16,6 +16,9 @@ import Amber from "@/public/judges/Amber_Zheng.webp";
 import Allan from "@/public/judges/Allan_Knight.webp";
 import Nilanjan from "@/public/judges/Nilanjan_Chatterjee.webp";
 import Sujita from "@/public/judges/Sujith_Katakam.webp";
+import Venkat from "@/public/judges/venkat_Nutalapati.webp";
+import Ahmed from "@/public/judges/Ahmed_Eldawy.webp";
+import pavan from "@/public/judges/Pavan_Nutalapati.webp";
 
 export const JUDGES = [
   {
@@ -45,7 +48,7 @@ export const JUDGES = [
   },
   {
     name: "Rishabh Thakur",
-    title: "Senior Software Engineer at Nvidia",
+    title: "Senior Software Engineer @ Nvidia",
     image: Rishabh,
   },
   {
@@ -79,6 +82,17 @@ export const JUDGES = [
     image: Sujita,
   },
   {
+    name: "Venkat Nutalapati",
+    title: "Senior Software Engineer",
+    image: Venkat,
+  },
+  {
+    name: "Pavan Nutalapati",
+    title: "Lead Software Engineer",
+    image: pavan,
+  },
+
+  {
     name: "Nilanjan Chatterjee",
     title: "Industry Judge",
     image: Nilanjan,
@@ -87,6 +101,11 @@ export const JUDGES = [
     name: "Allan Knight",
     title: "Assistant Professor of Teaching",
     image: Allan,
+  },
+  {
+    name: "Ahmed Eldawy",
+    title: "Associate Professor",
+    image: Ahmed,
   },
   {
     name: "Yogitha Shastri",
@@ -99,13 +118,13 @@ export const JUDGES = [
     image: Amber,
   },
   {
-    name: "Raidah Fairooz",
-    title: "Alumni",
-    image: Raidah,
-  },
-  {
     name: "Rachit Prajapati",
     title: "Graduate Student",
     image: Rachit,
+  },
+  {
+    name: "Raidah Fairooz",
+    title: "Alumni",
+    image: Raidah,
   },
 ];
