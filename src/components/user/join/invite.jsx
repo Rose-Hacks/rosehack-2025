@@ -54,9 +54,13 @@ const Invite = ({ team, id }) => {
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <Link href={`/user/team`}>
-              <AlertDialogAction>Visit New Team</AlertDialogAction>
-            </Link>
+            <AlertDialogAction
+              onClick={() => {
+                setAlert(false);
+              }}
+            >
+              Visit New Team
+            </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
