@@ -1,5 +1,5 @@
 "use client";
-// import { Session as SessionType } from "next-auth";
+import { Session as SessionType } from "next-auth";
 // import { SessionProvider } from "next-auth/react";
 import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -7,7 +7,7 @@ import { SidebarProvider } from "./ui/sidebar";
 
 type props = {
   children: React.ReactNode;
-  // session: SessionType | null;
+  session?: SessionType | null;
 };
 
 const Providers = ({ children }: props) => {
