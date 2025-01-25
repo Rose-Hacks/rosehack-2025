@@ -20,11 +20,12 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
-import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Invite = ({ team, id }) => {
   const [alert, setAlert] = useState(false);
+  const router = useRouter();
 
   const handleJoin = async () => {
     const response = await api({
@@ -54,9 +55,14 @@ const Invite = ({ team, id }) => {
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <Link href={`/user/team`}>
-              <AlertDialogAction>Visit New Team</AlertDialogAction>
-            </Link>
+            <AlertDialogAction
+              onClick={() => {
+                router.refresh();
+                setAlert(false);
+              }}
+            >
+              Visit New Team
+            </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
