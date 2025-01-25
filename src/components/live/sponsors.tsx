@@ -16,7 +16,11 @@ const Sponsors = () => {
               key={i}
               className="m-3 flex h-48 w-48 items-center justify-center overflow-hidden rounded-full bg-[#2F6A67] duration-300 hover:scale-105 md:m-5 md:h-64 md:w-64"
             >
-              <Image src={image.image} alt={image.name} />
+              <Image
+                src={image.image}
+                alt={image.name}
+                className={`${i === 7 ? "p-7" : i === 8 ? "p-4" : "p-0"}`}
+              />
             </Link>
           ))}
       </div>

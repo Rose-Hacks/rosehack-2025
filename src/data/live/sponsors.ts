@@ -4,9 +4,10 @@ import BALSAMIQ from "@/public/assets/sponsors/balsamiq.svg";
 import TRIAD from "@/public/assets/sponsors/triad.svg";
 import GLICO from "@/public/assets/sponsors/glico.svg";
 import STANDOUTSTICKERS from "@/public/assets/sponsors/standout-stickers.svg";
-import NORD from "@/public/assets/sponsors/nordvpn.svg";
+import NORDVPN from "@/public/assets/sponsors/nordvpn.png";
 import INCOGNI from "@/public/assets/sponsors/incogni.svg";
 import SAILY from "@/public/assets/sponsors/Saily.webp";
+import NORDPASS from "@/public/assets/sponsors/nordpass.png";
 
 const SPONSORS = [
   { name: "WinC", image: WINC, link: "https://winc.cs.ucr.edu/" },
@@ -23,7 +24,8 @@ const SPONSORS = [
     image: STANDOUTSTICKERS,
     link: "https://www.standoutstickers.com/",
   },
-  { name: "NordVPN", image: NORD, link: "https://nordvpn.com/" },
+  { name: "NordVPN", image: NORDVPN, link: "https://nordvpn.com/hackathons" },
+  { name: "NordVPN", image: NORDPASS, link: "https://nordpass.com/" },
   { name: "Incogni", image: INCOGNI, link: "https://incogni.io/" },
   { name: "Saily", image: SAILY, link: "https://saily.com/" },
 ];
