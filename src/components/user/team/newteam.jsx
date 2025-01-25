@@ -85,7 +85,11 @@ const NewTeam = () => {
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <Link onClick={()=>{ router.refresh()}}>
+            <Link
+              onClick={() => {
+                router.refresh();
+              }}
+            >
               <AlertDialogAction>Visit New Team</AlertDialogAction>
             </Link>
           </AlertDialogFooter>

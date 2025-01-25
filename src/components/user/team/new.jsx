@@ -72,7 +72,6 @@ const NewTeam = () => {
     toaster("Successfully created a new team!", "success");
   };
 
-
   return (
     <>
       <AlertDialog open={id !== ""}>
