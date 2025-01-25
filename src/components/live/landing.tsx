@@ -22,7 +22,7 @@ const Landing = () => {
           height={100}
         />
       </Link>
-      <div className="absolute top-5 z-50 flex w-fit flex-col items-center justify-center gap-4 md:top-36 md:w-full">
+      <div className="absolute top-32 z-50 flex w-fit flex-col items-center justify-center gap-4 md:top-36 md:w-full">
         <Image src={Logo} alt="Rose Hack Logo" className="w-1/4 md:w-fit" />
         <Content />
       </div>
