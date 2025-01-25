@@ -9,7 +9,6 @@ import {
   InputOTPSlot,
 } from "@/components/ui/input-otp";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { InputWithClear } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
@@ -22,8 +21,6 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
-
-const tags = ["professor", "industry", "student"];
 
 const Toolbar = ({
   data,
@@ -232,10 +229,7 @@ const Toolbar = ({
         </AlertDialogContent>
       </AlertDialog>
 
-      <form
-        className="flex w-full flex-col justify-between gap-2 sm:flex-row sm:items-center"
-        onSubmit={generate}
-      >
+      <div className="flex w-full flex-col justify-between gap-2 sm:flex-row sm:items-center">
         <div className="flex flex-row items-center gap-2 pb-3 pl-2">
           <InputOTP
             maxLength={2}
@@ -251,42 +245,34 @@ const Toolbar = ({
         </div>
 
         <div className="flex flex-row justify-center gap-3">
-          <Button onClick={generate}>generate</Button>
+          <Button onClick={generate}>Generate</Button>
           <Button
             variant="destructive"
             onClick={handleReset}
             disabled={!data || data.some(({ rounds }) => rounds.length === 0)}
           >
-            reset
+            Reset
           </Button>
 
           <Button
             onClick={handleView}
             disabled={!data || data.some(({ rounds }) => rounds.length === 0)}
           >
-            change view
+            Change View
           </Button>
         </div>
-        <div className="pl-2">
-          <Label htmlFor="search">Search</Label>
-          <InputWithClear
-            id="search"
-            value={search}
-            maxLength={100}
-            placeholder="Search"
-            onClear={() => setSearch("")}
-            onChange={handleInput}
-          />
-        </div>
-
-        <div className="flex flex-row justify-center">
-          {tags.map((tag, index) => (
-            <Badge type={tag} key={index}>
-              {tag}
-            </Badge>
-          ))}
-        </div>
-      </form>
+      </div>
+      <div className="w-full pl-2">
+        <Label htmlFor="search">Search</Label>
+        <InputWithClear
+          id="search"
+          value={search}
+          maxLength={100}
+          placeholder="Search"
+          onClear={() => setSearch("")}
+          onChange={handleInput}
+        />
+      </div>
     </>
   );
 };

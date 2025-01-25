@@ -66,7 +66,6 @@ const Events = ({ events, totalDays }) => {
             alt="Cloud"
             className="animate-jiggle-6s absolute -left-[20%] -top-4 -z-10 hidden md:block"
           />
-          {/* {console.log(events)} */}
           <div className="z-20 w-full divide-y-4 rounded-xl border-4 border-white p-2">
             {events
               .filter(({ day }) => day === selectedDay)
