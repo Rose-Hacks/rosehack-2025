@@ -75,11 +75,17 @@ const Details = ({ team }) => {
 
     toaster("Successfully Updated!", "success");
   };
+  console.log(details);
 
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Team Details</CardTitle>
+        <div className="flex justify-between">
+          <CardTitle>Team Details</CardTitle>
+          <CardTitle>
+            {details.table ? `Table ${details.table}` : "No Table Assigned"}
+          </CardTitle>
+        </div>
         <CardDescription>Customize your team</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">

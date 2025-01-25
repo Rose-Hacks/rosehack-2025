@@ -15,12 +15,12 @@ const Content = () => {
         </div>
         <Countdown />
 
-        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-2">
+        <div className="flex items-center justify-center">
           <Button text="DASHBOARD" link="/user" />
-          <Button text="REGISTER" link="/form/participant" />
+          {/* <Button text="REGISTER" link="/form/participant" />
           <Button text="VOLUNTEER" link="/form/volunteer" />
           <Button text="MENTOR" link="/form/mentor" />
-          <Button text="SPONSOR" link="/form/sponsor" />
+          <Button text="SPONSOR" link="/form/sponsor" /> */}
         </div>
         <div className="flex flex-row gap-3 text-rosehack-white">
           <Link
