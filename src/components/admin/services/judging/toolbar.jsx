@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-// import { COLORS } from "@/data/Tags";
 import toaster from "@/utils/toaster";
 import { useRouter } from "next/navigation";
 import { api } from "@/utils/api";
@@ -52,8 +51,6 @@ const Toolbar = ({
   const [search, setSearch] = useState("");
 
   const generate = (e) => {
-    console.log("generated call", input.rotations);
-
     e.preventDefault();
     if (
       input.rotations === "" ||
@@ -90,12 +87,14 @@ const Toolbar = ({
     for (let j = 0; j < input.rotations; j += 1) {
       for (let i = 0; i < teams.length; i += 1) {
         if (round === parseInt(input.rotations)) continue;
+
         if (
-          teams[i].rounds.some((judges) =>
-            judges.some((individual) => individual.name === judges[judge].name),
+          teams[i].rounds.some((curr) =>
+            curr.some((individual) => individual.name === judges[judge].name),
           )
         )
           continue;
+
         if (judge < judges.length) {
           teams[i].rounds[round].push(judges[judge]);
           judge += 1;

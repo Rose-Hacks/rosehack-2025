@@ -45,7 +45,7 @@ const Table = ({ data }) => {
               >
                 <div className="w-full rounded-xl bg-white p-3">
                   <div className="flex items-center justify-between">
-                    <Badge> {group.name}</Badge>
+                    <Badge>{group.name}</Badge>
                     <div className="ml-2 flex w-full justify-start">
                       {group.links &&
                         group.links
@@ -70,7 +70,7 @@ const Table = ({ data }) => {
                   {group.rounds.map((judges, index) => (
                     <div key={index} className="my-2 flex items-center">
                       <p className="mb-0 mr-2 font-semibold">{index + 1}</p>
-                      <div className="flex items-center">
+                      <div className="flex items-center gap-2">
                         {judges.map(({ name }, i) => (
                           <Badge key={i}>{name}</Badge>
                         ))}

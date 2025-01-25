@@ -16,9 +16,9 @@ import Amber from "@/public/judges/Amber_Zheng.webp";
 import Allan from "@/public/judges/Allan_Knight.webp";
 import Nilanjan from "@/public/judges/Nilanjan_Chatterjee.webp";
 import Sujita from "@/public/judges/Sujith_Katakam.webp";
-import Venkat from "@/public/judges/venkat_Nutalapati.png";
-import Ahmed from "@/public/judges/Ahmed_Eldawy.png";
-import pavan from "@/public/judges/Pavan_Nutalapati.png";
+import Venkat from "@/public/judges/venkat_Nutalapati.webp";
+import Ahmed from "@/public/judges/Ahmed_Eldawy.webp";
+import pavan from "@/public/judges/Pavan_Nutalapati.webp";
 
 export const JUDGES = [
   {
