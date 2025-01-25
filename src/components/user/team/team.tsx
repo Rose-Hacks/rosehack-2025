@@ -9,7 +9,7 @@ const Team = async () => {
 
   if (!session?.user) return <></>;
 
-  const team = session.user.team;
+  const team = session.user.team ?? "";
 
   const details = await fetchTeam(team);
 
