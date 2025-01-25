@@ -52,6 +52,8 @@ const Toolbar = ({
   const [search, setSearch] = useState("");
 
   const generate = (e) => {
+    console.log("generated call", input.rotations);
+
     e.preventDefault();
     if (
       input.rotations === "" ||
