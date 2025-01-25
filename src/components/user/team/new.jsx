@@ -22,8 +22,8 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
 import toaster from "@/utils/toaster";
-import Link from "next/link";
 import { api } from "@/utils/api";
+import { useRouter } from "next/navigation";
 
 const NewTeam = () => {
   const [team, setTeam] = useState({
@@ -32,6 +32,7 @@ const NewTeam = () => {
   });
 
   const [id, setId] = useState("");
+  const router = useRouter();
 
   const handleJoin = async () => {
     if (team.id === "") {
@@ -71,6 +72,7 @@ const NewTeam = () => {
     toaster("Successfully created a new team!", "success");
   };
 
+
   return (
     <>
       <AlertDialog open={id !== ""}>
@@ -83,9 +85,9 @@ const NewTeam = () => {
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <Link href={`/user/team`}>
-              <AlertDialogAction>Visit New Team</AlertDialogAction>
-            </Link>
+            <AlertDialogAction onClick={router.refresh()}>
+              Visit New Team
+            </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
