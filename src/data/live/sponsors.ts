@@ -6,7 +6,7 @@ import GLICO from "@/public/assets/sponsors/glico.svg";
 import STANDOUTSTICKERS from "@/public/assets/sponsors/standout-stickers.svg";
 import NORD from "@/public/assets/sponsors/nordvpn.svg";
 import INCOGNI from "@/public/assets/sponsors/incogni.svg";
-import SAILY from "@/public/assets/sponsors/Saily.jpg";
+import SAILY from "@/public/assets/sponsors/Saily.webp";
 
 const SPONSORS = [
   { name: "WinC", image: WINC, link: "https://winc.cs.ucr.edu/" },
