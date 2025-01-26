@@ -21,7 +21,7 @@ const Providers = ({ children, session }: props) => {
   );
 
   return (
-    <SessionProvider session={session} refetchInterval={5 * 60}>
+    <SessionProvider session={session} refetchInterval={20 * 60}>
       <QueryClientProvider client={client}>
         <SidebarProvider>{children}</SidebarProvider>
       </QueryClientProvider>
