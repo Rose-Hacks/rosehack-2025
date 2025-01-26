@@ -22,7 +22,7 @@ const data: config = {
   description: "A women-centric 24 hour hackathon in UC Riverside",
   length: 24,
   date: new Date("2025-01-25T09:00:00"),
-  end: new Date("2025-01-26T09:00:00"),
+  end: new Date("2025-01-26T10:00:00"),
   packet: "",
   devpost: "",
   domain: "https://www.rosehack.com/",
