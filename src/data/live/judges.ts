@@ -37,7 +37,7 @@ export const JUDGES = [
     image: Ioana,
   },
   {
-    name: "Prachi Kurani",
+    name: "Prachit Kurani",
     title: "Software Quality Manager",
     image: PrachiKurani,
   },
