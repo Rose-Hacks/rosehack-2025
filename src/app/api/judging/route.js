@@ -47,22 +47,22 @@ export const GET = async () => {
     teamsSnapshot.forEach((doc) => {
       const { links, name, rounds, table } = doc.data();
 
-      if (links.devpost !== "") {
-        const formattedRounds = rounds === undefined ? [] : JSON.parse(rounds);
-        const formattedTable = table === undefined ? "" : table;
-        const formattedLinks = Object.entries(links).map(([key, value]) => {
-          return { name: key, link: value };
-        });
+      // if (links.devpost !== "") {
+      const formattedRounds = rounds === undefined ? [] : JSON.parse(rounds);
+      const formattedTable = table === undefined ? "" : table;
+      const formattedLinks = Object.entries(links).map(([key, value]) => {
+        return { name: key, link: value };
+      });
 
-        teams.push({
-          links: formattedLinks,
-          rounds: formattedRounds,
-          table: formattedTable,
-          name,
-          uid: doc.id,
-          hidden: false,
-        });
-      }
+      teams.push({
+        links: formattedLinks,
+        rounds: formattedRounds,
+        table: formattedTable,
+        name,
+        uid: doc.id,
+        hidden: false,
+      });
+      // }
     });
 
     judgesSnapshot.forEach((doc) => {
