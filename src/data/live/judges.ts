@@ -19,6 +19,7 @@ import Sujita from "@/public/judges/Sujith_Katakam.webp";
 import Venkat from "@/public/judges/venkat_Nutalapati.webp";
 import Ahmed from "@/public/judges/Ahmed_Eldawy.webp";
 import pavan from "@/public/judges/Pavan_Nutalapati.webp";
+import keynote from "@/public/board/yonaphoto.webp";
 
 export const JUDGES = [
   {
@@ -91,11 +92,15 @@ export const JUDGES = [
     title: "Lead Software Engineer",
     image: pavan,
   },
-
   {
     name: "Nilanjan Chatterjee",
     title: "Industry Judge",
     image: Nilanjan,
+  },
+  {
+    name: "Yona Ngo",
+    title: "Software Engineer",
+    image: keynote,
   },
   {
     name: "Allan Knight",
