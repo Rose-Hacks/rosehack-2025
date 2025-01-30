@@ -15,7 +15,8 @@ const Content = () => {
         </div>
         <Countdown />
 
-        <div className="flex items-center justify-center">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <Button text="DEVSPOT" link="https://rosehack2025.devpost.com/" />
           <Button text="DASHBOARD" link="/user" />
           {/* <Button text="REGISTER" link="/form/participant" />
           <Button text="VOLUNTEER" link="/form/volunteer" />
