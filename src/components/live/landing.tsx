@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Content from "./landing/content";
 import Logo from "@/public/assets/logo.svg";
 import clouds from "@/public/assets/landing/clouds.svg";
@@ -8,20 +7,20 @@ import foreground from "@/public/assets/aboutTopGrass.svg";
 const Landing = () => {
   return (
     <div className="relative flex h-screen w-full flex-col items-center justify-center bg-rosehack-blue-100">
-      <Link
+      {/* <Link
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
         target="_blank"
         rel="noopener noreferrer"
         className="z-1 absolute right-3 top-0 z-50 w-12 cursor-pointer md:w-28 lg:right-10"
-      >
-        <Image
+      > */}
+      {/* <Image
           src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
           alt="Major League Hacking 2025 Hackathon Season"
           className="w-full cursor-pointer"
           width={100}
           height={100}
-        />
-      </Link>
+        /> */}
+      {/* </Link> */}
       <div className="absolute top-32 z-50 flex w-fit flex-col items-center justify-center gap-4 md:top-36 md:w-full">
         <Image src={Logo} alt="Rose Hack Logo" className="w-1/4 md:w-fit" />
         <Content />

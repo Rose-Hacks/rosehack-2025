@@ -8,16 +8,18 @@ const Content = () => {
     <div className="flex w-11/12 flex-col items-center justify-center gap-2 md:w-3/5 xl:w-2/5">
       <div className="flex w-full flex-col items-center justify-center gap-4 rounded-3xl border-4 border-rosehack-white/70 bg-rosehack-green/80 p-3 font-netron">
         <div className="whitespace-nowrap rounded-3xl px-7 text-center font-netron text-lg text-rosehack-white md:whitespace-normal md:text-3xl">
-          ROSE HACK 2025
+          ROSE HACK 2026
           <div className="mb-3 flex items-center justify-center whitespace-nowrap rounded-3xl px-7 text-center font-netron text-lg text-rosehack-white/80 md:whitespace-normal md:text-xl">
-            JANUARY 25-26, 2025
+            JANUARY 24-25, 2026
           </div>
         </div>
         <Countdown />
 
         <div className="grid grid-cols-1 items-center justify-center gap-3">
-          <Button text="DEVSPOT" link="https://rosehack2025.devpost.com/" />
-          <Button text="DASHBOARD" link="/user" />
+          <Button
+            text="Now Hiring"
+            link="https://docs.google.com/forms/d/e/1FAIpQLSdVtPZdasZnfFXP1nskcVj3Boaz3iyafu5BRGJa_Y80mWQxhw/viewform"
+          />
           {/* <Button text="REGISTER" link="/form/participant" />
           <Button text="VOLUNTEER" link="/form/volunteer" />
           <Button text="MENTOR" link="/form/mentor" />
