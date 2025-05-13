@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Countdown from "./countdown";
+// import Countdown from "./countdown";
 import Button from "../button";
 import { InstagramIcon, LinkedinIcon, MailIcon } from "lucide-react";
 
@@ -10,12 +10,12 @@ const Content = () => {
         <div className="whitespace-nowrap rounded-3xl px-7 text-center font-netron text-lg text-rosehack-white md:whitespace-normal md:text-3xl">
           ROSE HACK 2026
           <div className="mb-3 flex items-center justify-center whitespace-nowrap rounded-3xl px-7 text-center font-netron text-lg text-rosehack-white/80 md:whitespace-normal md:text-xl">
-            JANUARY 24-25, 2026
+            COMING SOON
           </div>
         </div>
-        <Countdown />
+        {/* <Countdown /> */}
 
-        <div className="grid grid-cols-1 items-center justify-center gap-3">
+        <div className="grid grid-cols-1 items-center justify-center gap-3 duration-200 hover:scale-105">
           <Button
             text="Now Hiring"
             link="https://docs.google.com/forms/d/e/1FAIpQLSdVtPZdasZnfFXP1nskcVj3Boaz3iyafu5BRGJa_Y80mWQxhw/viewform"
