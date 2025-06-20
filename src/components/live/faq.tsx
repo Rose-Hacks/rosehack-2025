@@ -9,7 +9,7 @@ import { QUESTIONS } from "@/data/faq";
 const FAQ = () => {
   return (
     <div className="flex w-full flex-col items-center bg-rosehack-blue-100 py-10 text-rosehack-white">
-      <h1 className="mb-8 text-center font-netron text-4xl font-bold md:text-6xl">
+      <h1 className="font-netron mb-8 text-center text-4xl font-bold md:text-6xl">
         FAQ
       </h1>
       <div className="w-11/12 max-w-[1040px] md:w-full">

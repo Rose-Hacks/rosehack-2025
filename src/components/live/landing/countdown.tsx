@@ -12,7 +12,7 @@ const Digits = ({ value, text }: { value: number; text: string }) => {
           .split("")
           .map((digit, index) => (
             <p
-              className="flex items-center justify-center rounded-lg bg-rosehack-darkgreen p-3 font-netron text-lg font-bold text-white lg:min-w-11 lg:p-3 lg:text-2xl"
+              className="font-netron flex items-center justify-center rounded-lg bg-rosehack-darkgreen p-3 text-lg font-bold text-white lg:min-w-11 lg:p-3 lg:text-2xl"
               key={index}
             >
               {digit}
@@ -60,7 +60,7 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className="inline-flex gap-6 font-netron font-bold text-rosehack-white">
+    <div className="font-netron inline-flex gap-6 font-bold text-rosehack-white">
       {Object.entries(time).map(([text, value], index) => (
         <Digits key={index} text={text} value={value} />
       ))}

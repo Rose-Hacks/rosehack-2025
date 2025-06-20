@@ -6,20 +6,17 @@ import { InstagramIcon, LinkedinIcon, MailIcon } from "lucide-react";
 const Content = () => {
   return (
     <div className="flex w-11/12 flex-col items-center justify-center gap-2 md:w-3/5 xl:w-2/5">
-      <div className="flex w-full flex-col items-center justify-center gap-4 rounded-3xl border-4 border-rosehack-white/70 bg-rosehack-green/80 p-3 font-netron">
-        <div className="whitespace-nowrap rounded-3xl px-7 text-center font-netron text-lg text-rosehack-white md:whitespace-normal md:text-3xl">
+      <div className="flex w-full flex-col items-center justify-center gap-4 rounded-3xl p-3">
+        <div className="whitespace-nowrap rounded-3xl text-center font-rosehack-main text-lg text-rosehack-white md:whitespace-normal md:text-6xl">
           ROSE HACK 2026
-          <div className="mb-3 flex items-center justify-center whitespace-nowrap rounded-3xl px-7 text-center font-netron text-lg text-rosehack-white/80 md:whitespace-normal md:text-xl">
+          <div className="m-3 flex items-center justify-center whitespace-nowrap rounded-3xl px-7 text-center text-lg text-rosehack-white/80 md:whitespace-normal md:text-3xl">
             COMING SOON
           </div>
         </div>
         {/* <Countdown /> */}
 
-        <div className="grid grid-cols-1 items-center justify-center gap-3 duration-200 hover:scale-105">
-          <Button
-            text="Now Hiring"
-            link="https://docs.google.com/forms/d/e/1FAIpQLSdVtPZdasZnfFXP1nskcVj3Boaz3iyafu5BRGJa_Y80mWQxhw/viewform"
-          />
+        <div className="grid grid-cols-1 items-center justify-center gap-3 p-5 font-rosehack-alt duration-200 hover:scale-105">
+          <Button text="Interest Form" link="/form/interest" />
           {/* <Button text="REGISTER" link="/form/participant" />
           <Button text="VOLUNTEER" link="/form/volunteer" />
           <Button text="MENTOR" link="/form/mentor" />

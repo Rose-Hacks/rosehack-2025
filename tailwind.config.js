@@ -13,7 +13,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        netron: ["Netron", "sans-serif"],
+        "rosehack-main": ["var(--font-rosehack-main)", "serif"],
+        "rosehack-alt": ["var(--font-rosehack-alt)", "sans-serif"],
       },
       colors: {
         hackathon: {
@@ -52,11 +53,12 @@ module.exports = {
         },
         rosehack: {
           white: "#FDEFE8",
+          yellow: "#FFD68C",
           green: "#7AB9B5",
-          "green-100": "#A3BD84",
+          "green-100": "#91B87C",
           "green-200": "#BFD389",
-          "green-300": "#618065",
-          "green-400": "#30371D",
+          "green-300": "#415237",
+          "green-400": "#243B3D",
           darkgreen: "#4f7b80",
           "blue-100": "#68B5E1",
           "blue-200": "#4092CE",

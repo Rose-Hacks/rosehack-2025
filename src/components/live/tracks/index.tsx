@@ -4,7 +4,7 @@ import TrackCard from "@/components/live/tracks/TrackCard";
 const Tracks = () => {
   return (
     <div className="mt-[130%] w-full bg-rosehack-blue-100 lg:mt-[15%]">
-      <h1 className="mt-8 text-center font-netron text-3xl font-bold text-rosehack-white md:mt-12 md:text-6xl">
+      <h1 className="font-netron mt-8 text-center text-3xl font-bold text-rosehack-white md:mt-12 md:text-6xl">
         Tracks
       </h1>
       <div className="place-content mx-auto mb-12 mt-8 grid w-3/4 max-w-[1040px] grid-cols-1 gap-7 md:w-full md:grid-cols-2 md:gap-5">
