@@ -4,7 +4,7 @@ import Link from "next/link";
 const Sponsors = () => {
   return (
     <div className="w-full bg-rosehack-blue-100 text-center">
-      <h1 className="mt-10 font-netron text-3xl text-rosehack-white md:text-6xl">
+      <h1 className="font-netron mt-10 text-3xl text-rosehack-white md:text-6xl">
         Sponsors
       </h1>
       <div className="mx-auto mb-16 mt-7 flex max-w-[1040px] flex-wrap items-center justify-center md:mb-24 md:mt-10">

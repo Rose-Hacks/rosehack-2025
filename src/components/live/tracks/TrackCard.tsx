@@ -30,7 +30,7 @@ const TrackCard = (props: TrackCardProps) => {
       {props.number && (
         <div className="h-full transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateX(180deg)] group-focus:[transform:rotateX(180deg)]">
           <div
-            className={`relative flex h-full items-end ${variant} ${frontSide} w-full overflow-clip rounded-3xl font-netron [backface-visibility:hidden]`}
+            className={`relative flex h-full items-end ${variant} ${frontSide} font-netron w-full overflow-clip rounded-3xl [backface-visibility:hidden]`}
           >
             {props.bgImage && (
               <Image
